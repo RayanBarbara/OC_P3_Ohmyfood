@@ -1,0 +1,11 @@
+body{
+    @include clean;
+}
+
+figure{
+    @include clean;
+}
+
+a{
+    text-decoration: none;
+}

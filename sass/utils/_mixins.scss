@@ -1,0 +1,37 @@
+@mixin clean{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+@mixin brighten($color){
+    color: lighten($color, 10%);
+}
+
+@mixin text-font($size, $weight, $color){
+    font-family: Roboto;
+    font-size: size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin title-font($size, $weight, $color){
+    font-family: Shrikhand;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin picture-scaling($width, $height){
+    object-fit: cover;
+    width: $width;
+    height: $height;
+}
+
+@mixin button-shadow{
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.4);
+}
+
+@mixin card-shadow{
+    box-shadow: 3px 3px 13px 1px rgba(0,0,0,0.2);
+}

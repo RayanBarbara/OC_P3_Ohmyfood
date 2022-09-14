@@ -1,0 +1,41 @@
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: white;
+    @include card-shadow;
+}
+
+#logo{
+    @include picture-scaling(180px, auto);
+    margin: 20px 0 5px 0;
+}
+
+.nav{
+    display: none;
+}
+
+@media (min-width: $breakpoint-tablet){
+    header{
+        justify-content: space-between;
+        gap: 5%;
+        background-color: lightgray;
+    }
+
+    #logo{
+        @include picture-scaling(130px, auto);
+        margin: 5px 0 5px 5px;
+    }
+
+    .nav{
+        display: flex;
+        margin: 5px 5px 5px 0px;
+        &__link{
+            @include title-font(16px, 300, $primary-color);
+            &:hover{
+                @include brighten($primary-color);
+            }
+        }
+    }
+
+}
