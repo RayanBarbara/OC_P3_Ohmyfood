@@ -1,0 +1,34 @@
+.btn {
+    @include text-font(16px, 450, white);
+    @include button-shadow(0.2);
+    cursor: pointer;
+
+    &--rounded {
+        border-radius: 0 7px 7px 0;
+    }
+
+    &--ellipse {
+        border-radius: 50px;
+    }
+
+    &--big {
+        padding: 15px 20px 15px 20px;
+    }
+
+    &--purple {
+        background: linear-gradient(351deg, rgba(147, 86, 220, 1) 0%, rgba(255, 0, 243, 0.810) 100%);
+    }
+
+    &--blue {
+        background-color: #0065FC;
+    }
+
+    &--borderless {
+        border: none;
+    }
+
+    &:hover{
+        filter: brightness(105%);
+        @include button-shadow(.3);
+    }
+}

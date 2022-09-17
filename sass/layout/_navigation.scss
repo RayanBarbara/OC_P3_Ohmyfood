@@ -1,0 +1,10 @@
+.nav{
+    &__link{
+        &--purple{
+            @include title-font(16px, 300, $primary-color);
+            &:hover{
+                @include brighten($primary-color, 10%);
+            }
+        }
+    }
+}

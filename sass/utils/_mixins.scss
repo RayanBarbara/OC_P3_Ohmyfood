@@ -4,13 +4,13 @@
     user-select: none;
 }
 
-@mixin brighten($color){
-    color: lighten($color, 10%);
+@mixin brighten($color, $percentage){
+    color: lighten($color, $percentage);
 }
 
 @mixin text-font($size, $weight, $color){
     font-family: Roboto;
-    font-size: size;
+    font-size: $size;
     font-weight: $weight;
     color: $color;
 }
@@ -28,10 +28,10 @@
     height: $height;
 }
 
-@mixin button-shadow{
-    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.4);
+@mixin button-shadow($opacity){
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,$opacity);
 }
 
-@mixin card-shadow{
-    box-shadow: 3px 3px 13px 1px rgba(0,0,0,0.2);
+@mixin card-shadow($opacity){
+    box-shadow: 3px 3px 13px 1px rgba(0,0,0,$opacity);
 }

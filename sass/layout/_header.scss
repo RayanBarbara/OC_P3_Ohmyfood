@@ -1,41 +1,32 @@
-header{
+header {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     background-color: white;
-    @include card-shadow;
+    padding: 20px 0 5px 0;
+    @include card-shadow(0.2);
 }
 
-#logo{
+#logo {
     @include picture-scaling(180px, auto);
-    margin: 20px 0 5px 0;
 }
 
-.nav{
+.nav {
     display: none;
 }
 
-@media (min-width: $breakpoint-tablet){
-    header{
+@media (min-width: $breakpoint-tablet) {
+    header {
         justify-content: space-between;
-        gap: 5%;
         background-color: lightgray;
+        padding: 15px 10px 5px 5px;
     }
 
-    #logo{
+    #logo {
         @include picture-scaling(130px, auto);
-        margin: 5px 0 5px 5px;
     }
 
-    .nav{
+    .nav {
         display: flex;
-        margin: 5px 5px 5px 0px;
-        &__link{
-            @include title-font(16px, 300, $primary-color);
-            &:hover{
-                @include brighten($primary-color);
-            }
-        }
     }
-
 }

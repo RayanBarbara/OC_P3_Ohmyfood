@@ -1,0 +1,10 @@
+.form{
+    width: max-content;
+    box-sizing:border-box;
+
+    &__input{
+        &::placeholder{
+            @include text-font(14px, 450, black)
+        }
+    }
+}

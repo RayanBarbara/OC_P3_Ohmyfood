@@ -1,31 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--Website general information-->
-        <title>Ohmyfood</title>
-        <meta charset="utf-8">
-        <meta name="description" content="Ohmyfood is an online food ordering company. Our concept allows users to compose their
+
+<head>
+    <!--Website general information-->
+    <title>Ohmyfood</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Ohmyfood is an online food ordering company. Our concept allows users to compose their
         own menu and reduce waiting time in restaurants because they make their choice in
         advance. No more wasting time consulting the menu!">
 
-        <!--Website's icon and stylesheet-->
-        <link href="ohmyfood.ico" type="image/x-icon" rel="shortcut icon">
-        <link href="./css/styles.css" type="text/css" rel="stylesheet">
+    <!--Website's icon and stylesheet-->
+    <link href="ohmyfood.ico" type="image/x-icon" rel="shortcut icon">
+    <link href="./css/styles.css" type="text/css" rel="stylesheet">
 
-        <!--Import and integration-->
-        <script src="https://kit.fontawesome.com/1f544e41e8.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Shrikhand:400,500,700,900" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
-    </head>
+    <!--Import and integration-->
+    <script src="https://kit.fontawesome.com/1f544e41e8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand:400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+</head>
 
-    <body>
-        <header>
-            <figure>
-                <img id="logo" src="./assets/Logo.png" alt="Logo of the company Ohmyfood" title="Logo of Ohmyfood">
-            </figure>
-            <nav class="nav">
-                <a class="nav__link" href="#">Restaurants</a>
-            </nav>
-        </header>
-    </body>
+<body>
+    <!--Header containing the logo of the company and a navigational link-->
+    <header>
+        <figure>
+            <img id="logo" src="./assets/Logo.png" alt="Logo of the company Ohmyfood" title="Logo of Ohmyfood">
+        </figure>
+        <nav class="nav">
+            <a class="nav__link--purple" href="#">Restaurants</a>
+        </nav>
+    </header>
+
+    <div class="information">
+        <section class="location">
+            <div id="location_smartphone">
+                <i class="fa-solid fa-location-dot"></i>
+                <h5>Paris, Belleville</h5>
+            </div>
+            <div id="location_tablet">
+                <h5>Find the best restaurants around you!</h5>
+                <form class="form">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input class="form__input" type="text" placeholder="Paris, Belleville" />
+                    <button class="btn btn--rounded btn--borderless btn--purple" type="submit">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="exploration">
+            <h2>Book the menu you like</h2>
+            <p>Discover top-of-the-art restaurant we picked for you</p>
+            <button class="btn btn--ellipse btn--big btn--borderless btn--purple">Explore our restaurants</button>
+        </section>
+
+        <section class="explanation">
+            <h2>How it works</h2>
+            <div class="cards">
+                <article class="card">
+                    <p class="lbl lbl--circle lbl--small lbl--purple">1</p>
+                    <i class="fa-solid fa-mobile-screen-button fa-lg"></i>
+                    <h5>Choose a restaurant</h5>
+                </article>
+                <article class="card">
+                    <p class="lbl lbl--circle lbl--small lbl--purple">2</p>
+                    <i class="fa-solid fa-list fa-lg"></i>
+                    <h5>Create your menu</h5>
+                </article>
+                <article class="card">
+                    <p class="lbl lbl--circle lbl--small lbl--purple">3</p>
+                    <i class="fa-solid fa-store fa-lg"></i>
+                    <h5>Go enjoy it at the restaurant</h5>
+                </article>
+            </div>
+        </section>
+
+    </div>
+</body>
+
 </html>
