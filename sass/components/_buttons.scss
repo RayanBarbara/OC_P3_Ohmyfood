@@ -1,10 +1,10 @@
 .btn {
+    cursor: pointer;
     @include text-font(16px, 450, white);
     @include button-shadow(0.2);
-    cursor: pointer;
 
     &--rounded {
-        border-radius: 0 7px 7px 0;
+        border-radius: 0 5px 5px 0;
     }
 
     &--ellipse {
@@ -28,7 +28,7 @@
     }
 
     &:hover{
-        filter: brightness(105%);
+        filter: brightness(102%);
         @include button-shadow(.3);
     }
 }

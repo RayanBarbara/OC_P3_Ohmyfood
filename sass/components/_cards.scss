@@ -1,0 +1,49 @@
+.card{
+    &-prev{
+        background-color: white;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        @include card-shadow(0.2);
+
+        &__image{
+            border-radius: 15px 15px 0 0;
+            object-position: 50% 60%;
+            @include picture-scaling(350px, 160px);
+        }
+
+        &__info{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: flex-start;
+            padding-left: 10px;
+        }
+
+        &__heading{
+            margin: 10px 0 5px 0;
+        }
+
+        &__byline{
+            margin: 0 0 10px 0;
+        }
+
+        &__label{
+            background-color: $tertiary-color;
+            border-radius: 3px;
+            text-align: center;
+            padding: 5px 0 5px 0;
+            width: 75px;
+            position: relative;
+            left: 265px;
+            bottom: 170px;
+            margin-bottom: -45px;
+            @include text-font(16px, normal, green);
+        }
+
+        &:hover{
+            background-color: rgb(147, 86, 220, 0.15);
+            transform: scale(1.01);
+            @include card-shadow(0.4);
+        }
+
+    }
+}

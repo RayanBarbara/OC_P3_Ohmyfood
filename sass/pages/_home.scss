@@ -89,6 +89,33 @@
     }
 }
 
+#restaurants{
+    background-color: rgba(210, 210, 210, 0.15);
+    padding: 0 20px 20px 20px;
+    
+    .nav-rest{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    #thefullpalette{
+        object-position: 50% 85%;
+    }
+
+    #theenchantedplate{
+        object-position: 50% 57%;
+    }
+
+    #bastille{
+        object-position: 50% 80%;
+    }
+
+    #legourmand{
+        object-position: 50% 90%;
+    }
+}
+
 @media (min-width: $breakpoint-tablet) {
     .information {
         .exploration {
@@ -127,17 +154,21 @@
                 h5{
                     margin: 5px 0 10px 0;
                 }
+
+                button{
+                    height: 26px;
+                }
             }
         }
 
         .explanation {
-            padding-left: 10px;
+            padding: 0 0 0 10px;
             order: 3;
 
             .cards {
                 display: flex;
                 flex-flow: row wrap;
-                gap: 2.5%;
+                gap: 2%;
 
                 .card {
                     width: max-content;
@@ -163,6 +194,19 @@
             h5 {
                 margin: 0 6px 0 0;
             }
+        }
+    }
+
+    #restaurants{
+        h2{
+            margin-top: 0px;
+        }
+
+        .nav-rest{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            gap: 1.5%;
         }
     }
 }

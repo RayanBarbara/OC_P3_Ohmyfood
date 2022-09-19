@@ -9,18 +9,12 @@
         border-radius: 50%;
     }
 
-    &--rounded {}
-
     &--small {
         padding: 5px;
     }
-
-    &--big {}
 
     &--purple {
         @include text-font(14px, 450, white);
         background-color: $primary-color;
     }
-
-    &--green {}
 }

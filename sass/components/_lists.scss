@@ -1,0 +1,22 @@
+.list{
+    &-footer{
+        display: flex;
+        flex-flow: column wrap;
+        list-style: none;
+        padding: 0;
+
+        &__link{
+            margin-bottom: 5px;
+            @include text-font(16px, normal, white);
+        }
+    }
+}
+
+@media (min-width: $breakpoint-tablet){
+    .list{
+        &-footer{
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+    }
+}
