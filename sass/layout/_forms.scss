@@ -1,19 +1,14 @@
-.form{
-    border: 1px solid #F2F2F2;
-    border-radius: 5px;
+.form {
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    background-color: white;
     width: fit-content;
 
-    .fa-solid{
-        background-color: lightgray;
-        padding: 5px;
-        border-radius: 5px 0 0 5px;
-    }
-
-    &__input{ 
+    &__input {
         border: none;
         width: 120px;
 
-        &::placeholder{
+        &::placeholder {
             @include text-font(14px, 450, black)
         }
     }

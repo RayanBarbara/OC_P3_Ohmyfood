@@ -1,7 +1,10 @@
 @import 
-    '../sass/utils/_variables.scss',
+    '../sass/utils/variables',
     '../sass/utils/mixins',
     '../sass/utils/functions';
+
+@import
+    '../sass/vendors/font-awesome';
 
 @import 
     '../sass/base/reset',

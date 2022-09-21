@@ -11,22 +11,13 @@ header {
     @include picture-scaling(180px, auto);
 }
 
-.nav {
-    display: none;
-}
-
 @media (min-width: $breakpoint-tablet) {
     header {
         justify-content: space-between;
-        background-color: lightgray;
         padding: 15px 10px 5px 5px;
     }
 
     #logo {
         @include picture-scaling(130px, auto);
-    }
-
-    .nav {
-        display: flex;
     }
 }

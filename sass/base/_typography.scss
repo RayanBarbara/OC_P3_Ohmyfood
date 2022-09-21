@@ -1,15 +1,15 @@
-h2{
+h2 {
     @include text-font(28px, 900, black);
 }
 
-h5{
+h5 {
     @include text-font(18px, 700, black);
 }
 
-p{
+p {
     @include text-font(18px, normal, black);
 }
 
-a{
+a {
     text-decoration: none;
 }

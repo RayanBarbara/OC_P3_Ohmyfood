@@ -1,3 +1,29 @@
+.information .location .fa-location-dot {
+  line-height: 16px;
+}
+.information .explanation .fa-solid {
+  color: grey;
+  line-height: 25px;
+  margin: 0 0 0 10px;
+}
+
+.form .fa-solid {
+  background-color: lightgray;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+}
+
+footer .fa-solid {
+  margin-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .information .explanation .fa-solid {
+    color: grey;
+    line-height: 25px;
+    margin: 0 5px 0 0;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -50,23 +76,15 @@ header {
   height: auto;
 }
 
-.nav {
-  display: none;
-}
-
 @media (min-width: 768px) {
   header {
     justify-content: space-between;
-    background-color: lightgray;
     padding: 15px 10px 5px 5px;
   }
   #logo {
     object-fit: cover;
     width: 130px;
     height: auto;
-  }
-  .nav {
-    display: flex;
   }
 }
 .nav__link--purple {
@@ -78,16 +96,25 @@ header {
 .nav__link--purple:hover {
   color: #ae80e5;
 }
-
-.form {
-  border: 1px solid #F2F2F2;
-  border-radius: 5px;
-  width: fit-content;
+.nav-rest {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
-.form .fa-solid {
-  background-color: lightgray;
-  padding: 5px;
-  border-radius: 5px 0 0 5px;
+
+@media (min-width: 768px) {
+  .nav-rest {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 1.5%;
+  }
+}
+.form {
+  border: 1px solid lightgray;
+  border-radius: 7px;
+  background-color: white;
+  width: fit-content;
 }
 .form__input {
   border: none;
@@ -120,9 +147,6 @@ footer a {
 }
 footer a:hover {
   color: #9356DC;
-}
-footer .fa-solid {
-  margin-right: 15px;
 }
 
 @media (min-width: 768px) {
@@ -161,6 +185,20 @@ footer .fa-solid {
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
+.card-expl {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px 0 20px 0;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  background-color: rgba(210, 210, 210, 0.2);
+  width: 350px;
+  cursor: pointer;
+  box-shadow: 3px 3px 13px 1px rgba(0, 0, 0, 0.2);
+}
+.card-expl:hover {
+  background-color: rgba(147, 86, 220, 0.15);
+}
 .card-prev {
   background-color: white;
   border-radius: 15px;
@@ -169,7 +207,6 @@ footer .fa-solid {
 }
 .card-prev__image {
   border-radius: 15px 15px 0 0;
-  object-position: 50% 60%;
   object-fit: cover;
   width: 350px;
   height: 160px;
@@ -195,7 +232,7 @@ footer .fa-solid {
   position: relative;
   left: 265px;
   bottom: 170px;
-  margin-bottom: -45px;
+  margin-bottom: -50px;
   font-family: Roboto;
   font-size: 16px;
   font-weight: normal;
@@ -207,6 +244,22 @@ footer .fa-solid {
   box-shadow: 3px 3px 13px 1px rgba(0, 0, 0, 0.4);
 }
 
+@media (min-width: 768px) {
+  .card-expl {
+    width: max-content;
+  }
+}
+@media (min-width: 1025px) {
+  .card-prev__image {
+    object-fit: cover;
+    width: 230px;
+    height: 100px;
+  }
+  .card-prev__label {
+    left: 150px;
+    bottom: 110px;
+  }
+}
 .lbl {
   display: inline-block;
   border: none;
@@ -261,9 +314,6 @@ footer .fa-solid {
 .information .location #location_smartphone {
   display: flex;
 }
-.information .location #location_smartphone .fa-location-dot {
-  line-height: 23px;
-}
 .information .location #location_smartphone h5 {
   margin: 0 0 0 20px;
 }
@@ -291,21 +341,7 @@ footer .fa-solid {
 .information .explanation .cards {
   padding-left: 10px;
 }
-.information .explanation .cards .card {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 20px 0 20px 0;
-  margin-bottom: 25px;
-  border-radius: 20px;
-  background-color: rgba(210, 210, 210, 0.2);
-  width: 350px;
-  cursor: pointer;
-  box-shadow: 3px 3px 13px 1px rgba(0, 0, 0, 0.2);
-}
-.information .explanation .cards .card:hover {
-  background-color: rgba(147, 86, 220, 0.15);
-}
-.information .explanation .cards .card:hover .fa-solid {
+.information .explanation .cards .card-expl:hover .fa-solid {
   color: #9356DC;
 }
 .information .explanation p {
@@ -314,11 +350,6 @@ footer .fa-solid {
   padding: 7px 7px 7px 8px;
   line-height: 12px;
 }
-.information .explanation .fa-solid {
-  color: grey;
-  line-height: 25px;
-  margin: 0 0 0 10px;
-}
 .information .explanation h5 {
   margin: 0 0 0 20px;
 }
@@ -326,11 +357,6 @@ footer .fa-solid {
 #restaurants {
   background-color: rgba(210, 210, 210, 0.15);
   padding: 0 20px 20px 20px;
-}
-#restaurants .nav-rest {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
 }
 #restaurants #thefullpalette {
   object-position: 50% 85%;
@@ -347,24 +373,20 @@ footer .fa-solid {
 
 @media (min-width: 768px) {
   .information .exploration {
-    align-items: flex-start;
-    background-color: white;
-    padding-bottom: 0;
+    background-color: rgba(210, 210, 210, 0.35);
+    padding: 20px 0 20px 0;
     order: 1;
   }
   .information .exploration h2 {
-    margin: 0 0 5px 0;
+    margin: 0 0 10px 0;
   }
   .information .exploration p {
     width: max-content;
-    margin: 0;
-  }
-  .information .exploration button {
-    display: none;
+    margin: 0 0 10px 0;
   }
   .information .location {
     justify-content: flex-start;
-    background-color: white;
+    background-color: rgba(210, 210, 210, 0.15);
     order: 2;
   }
   .information .location #location_smartphone {
@@ -389,9 +411,6 @@ footer .fa-solid {
     flex-flow: row wrap;
     gap: 2%;
   }
-  .information .explanation .cards .card {
-    width: max-content;
-  }
   .information .explanation h1 {
     margin: 0 0 20px 0;
   }
@@ -400,22 +419,11 @@ footer .fa-solid {
     left: -10px;
     line-height: 12px;
   }
-  .information .explanation .fa-solid {
-    color: grey;
-    line-height: 25px;
-    margin: 0 5px 0 0;
-  }
   .information .explanation h5 {
     margin: 0 6px 0 0;
   }
   #restaurants h2 {
     margin-top: 0px;
-  }
-  #restaurants .nav-rest {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    gap: 1.5%;
   }
 }
 

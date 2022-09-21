@@ -27,7 +27,7 @@
         border: none;
     }
 
-    &:hover{
+    &:hover {
         filter: brightness(102%);
         @include button-shadow(.3);
     }

@@ -1,10 +1,28 @@
-.nav{
-    &__link{
-        &--purple{
+.nav {
+    &__link {
+        &--purple {
             @include title-font(16px, 300, $primary-color);
-            &:hover{
+
+            &:hover {
                 @include brighten($primary-color, 10%);
             }
+        }
+    }
+
+    &-rest {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .nav {
+        &-rest {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            gap: 1.5%;
         }
     }
 }

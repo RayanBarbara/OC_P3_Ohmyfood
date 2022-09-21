@@ -1,29 +1,25 @@
-footer{
+footer {
     background-color: rgba(0, 0, 0, 0.8);
-    padding:  10px 20px 15px 30px;
+    padding: 10px 20px 15px 30px;
     margin-top: 30px;
 
-    h5{
+    h5 {
         margin: 10px 0 10px 0;
         @include title-font(18px, normal, white);
     }
 
-    a{
+    a {
         @include text-font(16px, normal, white);
 
-        &:hover{
+        &:hover {
             color: $primary-color;
         }
     }
-
-    .fa-solid{
-        margin-right: 15px;
-    }
 }
 
-@media (min-width: $breakpoint-tablet){
-    footer{
-        h5{
+@media (min-width: $breakpoint-tablet) {
+    footer {
+        h5 {
             text-align: center;
         }
     }

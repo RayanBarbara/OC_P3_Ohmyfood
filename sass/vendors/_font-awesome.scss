@@ -1,0 +1,41 @@
+.information{
+    .location{
+        .fa-location-dot {
+            line-height: 16px;
+        }
+    }
+
+    .explanation{
+        .fa-solid {
+            color: grey;
+            line-height: 25px;
+            margin: 0 0 0 10px;
+        }
+    }
+}
+
+.form{
+    .fa-solid {
+        background-color: lightgray;
+        padding: 5px;
+        border-radius: 5px 0 0 5px;
+    }
+}
+
+footer{
+    .fa-solid {
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .information{
+        .explanation{
+            .fa-solid {
+                color: grey;
+                line-height: 25px;
+                margin: 0 5px 0 0;
+            }
+        }
+    }
+}
