@@ -16,7 +16,7 @@
         display: flex;
         justify-content: space-between;
         background-color: white;
-        padding: 20px 35% 5px 20px;
+        padding: 15px 35% 5px 15px;
 
         .fa-solid{
             position: relative;
@@ -51,6 +51,9 @@
                 display: none;
             }
 
+            #logo {
+                @include picture-scaling(130px, auto);
+            }
         }
     }
 }
