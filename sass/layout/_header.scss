@@ -1,23 +1,56 @@
-header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    background-color: white;
-    padding: 20px 0 5px 0;
-    @include card-shadow(0.2);
-}
+.header {
+    &-homepage {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        background-color: white;
+        padding: 20px 0 5px 0;
+        @include card-shadow(0.2);
 
-#logo {
-    @include picture-scaling(180px, auto);
+        #logo {
+            @include picture-scaling(170px, auto);
+        }
+    }
+
+    &-restaurant{
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        padding: 20px 35% 5px 20px;
+
+        .fa-solid{
+            position: relative;
+            top: 7px;
+        }
+
+        figure{
+            display: inline-block;
+        }
+
+        #logo {
+            @include picture-scaling(170px, auto);
+        }
+    }
 }
 
 @media (min-width: $breakpoint-tablet) {
-    header {
-        justify-content: space-between;
-        padding: 15px 10px 5px 5px;
-    }
+    .header {
+        &-homepage {
+            justify-content: space-between;
+            padding: 15px 0 5px 15px;
 
-    #logo {
-        @include picture-scaling(130px, auto);
+            #logo {
+                @include picture-scaling(130px, auto);
+            }
+        }
+
+        &-restaurant{
+            justify-content: flex-start;
+
+            .fa-solid{
+                display: none;
+            }
+
+        }
     }
 }

@@ -6,7 +6,7 @@
         display: flex;
         justify-content: center;
         background-color: rgba(210, 210, 210, 0.35);
-        padding: 15px 10px 10px 10px;
+        padding: 15px 15px 10px 15px;
 
         #location_smartphone {
             display: flex;
@@ -26,7 +26,7 @@
         flex-flow: column wrap;
         align-items: center;
         background-color: rgba(210, 210, 210, 0.15);
-        padding: 20px 10px 40px 10px;
+        padding: 20px 0 40px 0;
 
         h2 {
             margin-bottom: 20px;
@@ -67,7 +67,7 @@
 
 #restaurants {
     background-color: rgba(210, 210, 210, 0.15);
-    padding: 0 20px 20px 20px;
+    padding: 0 20px 20px 30px;
 
     #thefullpalette {
         object-position: 50% 85%;
@@ -127,7 +127,7 @@
         }
 
         .explanation {
-            padding: 0 0 0 10px;
+            padding: 0 0 0 15px;
             order: 3;
 
             .cards {
@@ -153,6 +153,8 @@
     }
 
     #restaurants {
+        padding-left: 15px;
+        
         h2 {
             margin-top: 0px;
         }
