@@ -1,5 +1,8 @@
+//Styling of the header for the homepage and menus
+
 .header {
     &-homepage {
+        //Horizontally align and center items
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -12,18 +15,21 @@
         }
     }
 
-    &-restaurant{
+    &-restaurant {
+        //Horizontally align items and space them
         display: flex;
+        flex-flow: row wrap;
         justify-content: space-between;
         background-color: white;
         padding: 15px 35% 5px 15px;
 
-        .fa-solid{
+        .fa-solid {
             position: relative;
             top: 7px;
         }
 
-        figure{
+        figure {
+            //Change display to align icon with the logo
             display: inline-block;
         }
 
@@ -44,10 +50,11 @@
             }
         }
 
-        &-restaurant{
+        &-restaurant {
+            //Items are packed toward the left edge of the container
             justify-content: flex-start;
 
-            .fa-solid{
+            .fa-solid {
                 display: none;
             }
 

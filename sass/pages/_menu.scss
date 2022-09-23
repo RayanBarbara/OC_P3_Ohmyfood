@@ -1,9 +1,10 @@
-.restaurant-preview{
+.restaurant-preview {
     @include picture-scaling(100%, 250px);
 }
 
-@media (min-width: $breakpoint-tablet){
-    .restaurant-preview{
+@media (min-width: $breakpoint-tablet) {
+    .restaurant-preview {
+        //Specify the alignment of the picture
         object-position: 50% 60%;
         @include picture-scaling(100%, 150px);
     }

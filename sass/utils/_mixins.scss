@@ -1,13 +1,16 @@
+//Set margin and padding to 0 and do not allow the user to select text
 @mixin clean {
     margin: 0;
     padding: 0;
     user-select: none;
 }
 
+//Increases a given color lightness by a given amount
 @mixin brighten($color, $percentage) {
     color: lighten($color, $percentage);
 }
 
+//Set the size, weight and color of the text font
 @mixin text-font($size, $weight, $color) {
     font-family: Roboto;
     font-size: $size;
@@ -15,6 +18,7 @@
     color: $color;
 }
 
+//Set the size, weight and color of the titles
 @mixin title-font($size, $weight, $color) {
     font-family: Shrikhand;
     font-size: $size;
@@ -22,16 +26,19 @@
     color: $color;
 }
 
+//Scale the width and height of a picture before re-sizing it
 @mixin picture-scaling($width, $height) {
-    object-fit: cover;
     width: $width;
     height: $height;
+    object-fit: cover;
 }
 
+//Buttons box shadow
 @mixin button-shadow($opacity) {
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, $opacity);
 }
 
+//Cards box shadow
 @mixin card-shadow($opacity) {
     box-shadow: 3px 3px 13px 1px rgba(0, 0, 0, $opacity);
 }

@@ -71,12 +71,13 @@ a {
   box-shadow: 3px 3px 13px 1px rgba(0, 0, 0, 0.2);
 }
 .header-homepage #logo {
-  object-fit: cover;
   width: 170px;
   height: auto;
+  object-fit: cover;
 }
 .header-restaurant {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   background-color: white;
   padding: 15px 35% 5px 15px;
@@ -89,9 +90,9 @@ a {
   display: inline-block;
 }
 .header-restaurant #logo {
-  object-fit: cover;
   width: 170px;
   height: auto;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -100,9 +101,9 @@ a {
     padding: 15px 0 5px 15px;
   }
   .header-homepage #logo {
-    object-fit: cover;
     width: 130px;
     height: auto;
+    object-fit: cover;
   }
   .header-restaurant {
     justify-content: flex-start;
@@ -111,19 +112,10 @@ a {
     display: none;
   }
   .header-restaurant #logo {
-    object-fit: cover;
     width: 130px;
     height: auto;
+    object-fit: cover;
   }
-}
-.nav__link--purple {
-  font-family: Shrikhand;
-  font-size: 16px;
-  font-weight: 300;
-  color: #9356DC;
-}
-.nav__link--purple:hover {
-  color: #ae80e5;
 }
 .nav-rest {
   display: flex;
@@ -140,9 +132,9 @@ a {
   }
 }
 .form {
+  background-color: white;
   border: 1px solid lightgray;
   border-radius: 7px;
-  background-color: white;
   width: fit-content;
 }
 .form__input {
@@ -217,10 +209,10 @@ footer a:hover {
 .card-expl {
   display: flex;
   flex-flow: row wrap;
+  background-color: rgba(210, 210, 210, 0.2);
+  border-radius: 20px;
   padding: 20px 0 20px 0;
   margin-bottom: 25px;
-  border-radius: 20px;
-  background-color: rgba(210, 210, 210, 0.2);
   width: 350px;
   cursor: pointer;
   box-shadow: 3px 3px 13px 1px rgba(0, 0, 0, 0.2);
@@ -236,9 +228,9 @@ footer a:hover {
 }
 .card-prev__image {
   border-radius: 15px 15px 0 0;
-  object-fit: cover;
   width: 350px;
   height: 160px;
+  object-fit: cover;
 }
 .card-prev__info {
   display: flex;
@@ -253,15 +245,15 @@ footer a:hover {
   margin: 0 0 10px 0;
 }
 .card-prev__label {
+  position: relative;
+  left: 265px;
+  bottom: 170px;
   background-color: #99E2D0;
   border-radius: 3px;
   text-align: center;
   padding: 5px 0 5px 0;
-  width: 75px;
-  position: relative;
-  left: 265px;
-  bottom: 170px;
   margin-bottom: -50px;
+  width: 75px;
   font-family: Roboto;
   font-size: 16px;
   font-weight: normal;
@@ -280,9 +272,9 @@ footer a:hover {
 }
 @media (min-width: 1025px) {
   .card-prev__image {
-    object-fit: cover;
     width: 230px;
     height: 100px;
+    object-fit: cover;
   }
   .card-prev__label {
     left: 150px;
@@ -303,11 +295,11 @@ footer a:hover {
   padding: 5px;
 }
 .lbl--purple {
+  background-color: #9356DC;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 450;
   color: white;
-  background-color: #9356DC;
 }
 
 .list-footer {
@@ -459,17 +451,17 @@ footer a:hover {
   }
 }
 .restaurant-preview {
-  object-fit: cover;
   width: 100%;
   height: 250px;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
   .restaurant-preview {
     object-position: 50% 60%;
-    object-fit: cover;
     width: 100%;
     height: 150px;
+    object-fit: cover;
   }
 }
 

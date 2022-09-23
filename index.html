@@ -20,19 +20,21 @@
 </head>
 
 <body>
-    <!--Header containing the logo of the company and a navigational link-->
+    <!--Header containing the logo of the company-->
     <header class="header-homepage">
         <figure>
             <img id="logo" src="./assets/Logo.png" alt="Logo of the company Ohmyfood" title="Logo of Ohmyfood">
         </figure>
     </header>
 
+    <!--Section containing location information-->
     <div class="information">
         <section class="location">
             <div id="location_smartphone">
                 <i class="fa-solid fa-location-dot"></i>
                 <h5>Paris, Belleville</h5>
             </div>
+            <!--Search form-->
             <div id="location_tablet">
                 <h5>Find the best restaurants around you!</h5>
                 <form class="form">
@@ -43,14 +45,17 @@
             </div>
         </section>
 
+        <!--Section describing the goal of the website-->
         <section class="exploration">
             <h2>Book the menu you like</h2>
             <p>Discover top-of-the-art restaurant we picked for you</p>
+            <!--Link directing the user to the restaurant part-->
             <a href="#restaurants">
                 <div class="btn btn--ellipse btn--big btn--borderless btn--purple">Explore our restaurants</div>
             </a>
         </section>
 
+        <!--Section explaining how to use the website-->
         <section class="explanation">
             <h2>How it works</h2>
             <div class="cards">
@@ -73,17 +78,23 @@
         </section>
     </div>
 
+    <!--Main content of the website containing a list of the restaurants that can pass a command for a given town-->
     <main id="restaurants">
         <h2>Restaurants</h2>
+        <!--Navigation listing the restaurants-->
         <nav class="nav-rest">
+            <!--Article containing basic information about a restaurant and directing the user to the menu page-->
             <a href="../Ohmyfood/menu/the_full_palette.html">
                 <article class="card-prev">
                     <figure>
+                        <!--A picture preview of the restaurant-->
                         <img id="thefullpalette" class="card-prev__image"
                             src="./assets/restaurants/The_Full_Palette.jpg" alt="A picture of the restaurant's meal"
                             title="Meal of The Full Palette">
                     </figure>
+                    <!--New label tag for the newly added restaurant on the list-->
                     <p class="card-prev__label">New</p>
+                    <!--Div containing the basic information about the restaurant-->
                     <div class="card-prev__info">
                         <h5 class="card-prev__heading">The Full Palette</h5>
                         <p class="card-prev__byline">New york</p>
@@ -134,13 +145,14 @@
         </nav>
     </main>
 
+    <!--Footer listing links or content-->
     <footer>
         <h5>Ohmyfood</h5>
         <ul class="list-footer">
             <li class="list-footer__link"><i class="fa-solid fa-utensils"></i><a href="#"> Suggest a restaurant</a></li>
             <li class="list-footer__link"><i class="fa-solid fa-handshake-angle"></i><a href="#">Become a partner</a></li>
             <li class="list-footer__link"><a href="#">Legal</a></li>
-            <li class="list-footer__link"><a  href="#">Contact</a></li>
+            <li class="list-footer__link"><a href="#">Contact</a></li>
         </ul>
     </footer>
 </body>

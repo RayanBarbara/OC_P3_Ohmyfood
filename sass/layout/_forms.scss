@@ -1,10 +1,14 @@
+//Styling of forms elements
+
 .form {
+    background-color: white;
     border: 1px solid lightgray;
     border-radius: 7px;
-    background-color: white;
+    //Width use only the available space (never more than with max-content)
     width: fit-content;
 
     &__input {
+        //Erase border of the text input area
         border: none;
         width: 120px;
 

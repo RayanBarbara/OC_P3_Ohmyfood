@@ -1,8 +1,13 @@
+//Smartphone version SCSS for the homepage
+
+//SCSS for the information section listing some basic information about the website 
 .information {
+    //Vertically align all sections
     display: flex;
     flex-flow: column wrap;
 
     .location {
+        //Horizontally align and center items
         display: flex;
         justify-content: center;
         background-color: rgba(210, 210, 210, 0.35);
@@ -17,11 +22,13 @@
         }
 
         #location_tablet {
+            //Do not display the item
             display: none;
         }
     }
 
     .exploration {
+        //Vertically align and center items
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -33,8 +40,10 @@
         }
 
         p {
+            //Center text inside its container
             text-align: center;
             margin: 20px 0 40px 0;
+            //Create a text container
             width: 300px;
         }
     }
@@ -46,6 +55,8 @@
             padding-left: 10px;
 
             .card-expl {
+
+                //Change icons color when hovering over the cards
                 &:hover .fa-solid {
                     color: $primary-color;
                 }
@@ -65,11 +76,13 @@
     }
 }
 
+//SCSS for the main section showcasing the restaurants
 #restaurants {
     background-color: rgba(210, 210, 210, 0.15);
     padding: 0 20px 20px 30px;
 
     #thefullpalette {
+        //Specify the alignment of the picture
         object-position: 50% 85%;
     }
 
@@ -86,11 +99,13 @@
     }
 }
 
+//Tablet and computer version SCSS for the homepage
 @media (min-width: $breakpoint-tablet) {
     .information {
         .exploration {
             background-color: rgba(210, 210, 210, 0.35);
             padding: 20px 0 20px 0;
+            //Change the order of the section
             order: 1;
 
             h2 {
@@ -98,12 +113,14 @@
             }
 
             p {
+                //Ideal width size
                 width: max-content;
                 margin: 0 0 10px 0;
             }
         }
 
         .location {
+            //Items are packed toward the left edge of the container
             justify-content: flex-start;
             background-color: rgba(210, 210, 210, 0.15);
             order: 2;
@@ -112,7 +129,9 @@
                 display: none;
             }
 
+            //Styling of the search form
             #location_tablet {
+                //Vertically align items
                 display: flex;
                 flex-flow: column wrap;
 
@@ -131,8 +150,10 @@
             order: 3;
 
             .cards {
+                //Horizontally align items
                 display: flex;
                 flex-flow: row wrap;
+                //Add a small gap between items
                 gap: 2%;
             }
 
@@ -154,7 +175,7 @@
 
     #restaurants {
         padding-left: 15px;
-        
+
         h2 {
             margin-top: 0px;
         }

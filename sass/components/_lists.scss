@@ -1,7 +1,11 @@
+//Styling of all lists
+
 .list {
     &-footer {
+        //Vertically align items
         display: flex;
         flex-flow: column wrap;
+        //Erase the dot 
         list-style: none;
         padding: 0;
 
@@ -15,6 +19,7 @@
 @media (min-width: $breakpoint-tablet) {
     .list {
         &-footer {
+            //Horizontally align items and space them evenly
             flex-flow: row wrap;
             justify-content: space-evenly;
         }

@@ -1,15 +1,8 @@
+//Styling of navigation elements
+
 .nav {
-    &__link {
-        &--purple {
-            @include title-font(16px, 300, $primary-color);
-
-            &:hover {
-                @include brighten($primary-color, 10%);
-            }
-        }
-    }
-
     &-rest {
+        //Vertically align and center items
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -19,9 +12,11 @@
 @media (min-width: $breakpoint-tablet) {
     .nav {
         &-rest {
+            //Horizontally align items and space them evenly on the x-axis
             display: flex;
             flex-flow: row wrap;
             justify-content: space-evenly;
+            //Add a small gap between items
             gap: 1.5%;
         }
     }
