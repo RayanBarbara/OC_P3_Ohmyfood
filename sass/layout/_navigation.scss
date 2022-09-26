@@ -7,6 +7,10 @@
         flex-flow: column wrap;
         align-items: center;
     }
+
+    &-dishes{
+        padding: 0;
+    }
 }
 
 @media (min-width: $breakpoint-tablet) {
@@ -18,6 +22,12 @@
             justify-content: space-evenly;
             //Add a small gap between items
             gap: 1.5%;
+        }
+
+        &-dishes{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
         }
     }
 }

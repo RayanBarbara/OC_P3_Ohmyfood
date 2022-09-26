@@ -71,6 +71,40 @@
             @include card-shadow(0.4);
         }
     }
+
+    //Dishes cards
+    &-dish{
+        display: flex;
+        flex-flow: column wrap;
+        background-color: white;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        padding: 10px 15px 10px 15px;
+        min-width: 275px;
+        cursor: pointer;
+        @include card-shadow(0.1);
+
+        &__heading{
+            margin: 0;
+            @include text-font(16px, bold, black);
+        }
+
+        &__info{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        &__byline{
+            margin: 10px 0 0 0;
+            @include text-font(14px, normal, black);
+        }
+
+        &__price{
+            margin: 10px 0 0 0;
+            @include text-font(14px, bold, black);
+        }
+    }
 }
 
 @media (min-width: $breakpoint-tablet) {

@@ -1,9 +1,9 @@
 h2 {
-    @include text-font(28px, 900, black);
+    @include title-font(28px, normal, black);
 }
 
 h5 {
-    @include text-font(18px, 700, black);
+    @include text-font(18px, bold, black);
 }
 
 p {

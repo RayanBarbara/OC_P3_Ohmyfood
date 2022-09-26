@@ -2,10 +2,51 @@
     @include picture-scaling(100%, 250px);
 }
 
+#menus {
+    position: relative;
+    bottom: 45px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 45px 45px 0 0;
+    margin: 0 0 -45px 0;
+    padding: 40px 15px 40px 15px;
+
+    h2 {
+        margin-top: 0px;
+    }
+
+    h5 {
+        position: relative;
+        @include text-font(16px, normal, black);
+
+        //Create the green underline
+        &::before {
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            background-color: $tertiary-color;
+            width: 40px;
+            height: 3px;
+            content: '';
+        }
+    }
+
+    span {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 40px 0 40px 0;
+    }
+
+}
+
 @media (min-width: $breakpoint-tablet) {
     .restaurant-preview {
         //Specify the alignment of the picture
         object-position: 50% 60%;
-        @include picture-scaling(100%, 150px);
+        @include picture-scaling(100%, 250px);
+    }
+
+    #menus{
+        border-radius: 0;
     }
 }
