@@ -2,7 +2,7 @@
 
 .form {
     background-color: white;
-    border: 1px solid lightgray;
+    border: 1px solid $primary-grey;
     border-radius: 7px;
     //Width use only the available space (never more than with max-content)
     width: fit-content;

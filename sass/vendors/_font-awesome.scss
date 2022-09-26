@@ -1,11 +1,11 @@
-.information{
-    .location{
+.information {
+    .location {
         .fa-location-dot {
             line-height: 16px;
         }
     }
 
-    .explanation{
+    .explanation {
         .fa-solid {
             color: grey;
             line-height: 25px;
@@ -14,23 +14,23 @@
     }
 }
 
-.form{
+.form {
     .fa-solid {
-        background-color: lightgray;
+        background-color: $primary-grey;
         padding: 5px;
         border-radius: 5px 0 0 5px;
     }
 }
 
-footer{
+footer {
     .fa-solid {
         margin-right: 15px;
     }
 }
 
 @media (min-width: $breakpoint-tablet) {
-    .information{
-        .explanation{
+    .information {
+        .explanation {
             .fa-solid {
                 color: grey;
                 line-height: 25px;

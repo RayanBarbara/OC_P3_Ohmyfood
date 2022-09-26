@@ -1,11 +1,16 @@
+//Smartphone version SCSS for the menus
+
+
 .restaurant-preview {
+    //Preview picture of the restaurant below the header
     @include picture-scaling(100%, 250px);
 }
 
 #menus {
+    //Position menu block on the preview picture
     position: relative;
     bottom: 45px;
-    background-color: rgb(245, 245, 245);
+    background-color: $secondary-grey;
     border-radius: 45px 45px 0 0;
     margin: 0 0 -45px 0;
     padding: 40px 15px 40px 15px;
@@ -32,13 +37,13 @@
 
     span {
         display: flex;
-        flex-flow: row wrap;
         justify-content: center;
         margin: 40px 0 40px 0;
     }
 
 }
 
+//Tablet version SCSS for the menus
 @media (min-width: $breakpoint-tablet) {
     .restaurant-preview {
         //Specify the alignment of the picture

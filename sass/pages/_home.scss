@@ -7,13 +7,14 @@
     flex-flow: column wrap;
 
     .location {
-        //Horizontally align and center items
+        //Horizontally align and center icon and text
         display: flex;
         justify-content: center;
         background-color: rgba(210, 210, 210, 0.35);
         padding: 15px 15px 10px 15px;
 
         #location_smartphone {
+            //Horizontally align search form items
             display: flex;
 
             h5 {
@@ -28,11 +29,11 @@
     }
 
     .exploration {
-        //Vertically align and center items
+        //Vertically align and center header and text
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        background-color: rgba(210, 210, 210, 0.15);
+        background-color: $tertiary-grey;
         padding: 20px 0 40px 0;
 
         h2 {
@@ -56,7 +57,7 @@
 
             .card-expl {
 
-                //Change icons color when hovering over the cards
+                //Change icons color when hovering on the cards
                 &:hover .fa-solid {
                     color: $primary-color;
                 }
@@ -64,10 +65,11 @@
         }
 
         p {
+            //Position numbers inside the purple circle
             position: relative;
             left: -10px;
-            padding: 7px 7px 7px 8px;
             line-height: 12px;
+            padding: 7px 7px 7px 8px;
         }
 
         h5 {
@@ -78,7 +80,7 @@
 
 //SCSS for the main section showcasing the restaurants
 #restaurants {
-    background-color: rgba(210, 210, 210, 0.15);
+    background-color: $tertiary-grey;
     padding: 0 20px 20px 30px;
 
     #thefullpalette {
@@ -103,7 +105,7 @@
 @media (min-width: $breakpoint-tablet) {
     .information {
         .exploration {
-            background-color: rgba(210, 210, 210, 0.35);
+            background-color: $primary-grey;
             padding: 20px 0 20px 0;
             //Change the order of the section
             order: 1;
@@ -122,7 +124,7 @@
         .location {
             //Items are packed toward the left edge of the container
             justify-content: flex-start;
-            background-color: rgba(210, 210, 210, 0.15);
+            background-color: $tertiary-grey;
             order: 2;
 
             #location_smartphone {
@@ -150,9 +152,8 @@
             order: 3;
 
             .cards {
-                //Horizontally align items
+                //Horizontally align explanation cards
                 display: flex;
-                flex-flow: row wrap;
                 //Add a small gap between items
                 gap: 2%;
             }

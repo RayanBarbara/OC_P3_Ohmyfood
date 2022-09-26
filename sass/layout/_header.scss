@@ -2,28 +2,28 @@
 
 .header {
     &-homepage {
-        //Horizontally align and center items
+        //Horizontally align and center logo
         display: flex;
-        flex-flow: row wrap;
         justify-content: center;
         background-color: white;
         padding: 20px 0 5px 0;
-        @include card-shadow(0.2);
+        @include part-shadow();
 
         #logo {
+            //Scale logo
             @include picture-scaling(170px, auto);
         }
     }
 
     &-restaurant {
-        //Horizontally align items and space them
+        //Horizontally align logo and arrow icon before spacing them
         display: flex;
-        flex-flow: row wrap;
         justify-content: space-between;
         background-color: white;
         padding: 15px 35% 5px 15px;
 
         .fa-solid {
+            //Align vertically arrow icon with logo
             position: relative;
             top: 7px;
         }
@@ -51,10 +51,11 @@
         }
 
         &-restaurant {
-            //Items are packed toward the left edge of the container
+            //Logo is packed toward the left edge of the header
             justify-content: flex-start;
 
             .fa-solid {
+                //Do not display the arrow icon
                 display: none;
             }
 

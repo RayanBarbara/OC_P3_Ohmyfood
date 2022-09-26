@@ -42,3 +42,8 @@
 @mixin card-shadow($opacity) {
     box-shadow: 3px 3px 13px 1px rgba(0, 0, 0, $opacity);
 }
+
+//Part box shadow
+@mixin part-shadow{
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.1);
+}
