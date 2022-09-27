@@ -20,7 +20,7 @@
         display: flex;
         justify-content: space-between;
         background-color: white;
-        padding: 15px 35% 5px 15px;
+        padding: 15px 33% 5px 15px;
 
         .fa-solid {
             //Align vertically arrow icon with logo
@@ -42,17 +42,14 @@
 @media (min-width: $breakpoint-tablet) {
     .header {
         &-homepage {
-            justify-content: space-between;
-            padding: 15px 0 5px 15px;
-
             #logo {
                 @include picture-scaling(130px, auto);
             }
         }
 
         &-restaurant {
-            //Logo is packed toward the left edge of the header
-            justify-content: flex-start;
+            justify-content: center;
+            padding: 15px 0 5px 0;
 
             .fa-solid {
                 //Do not display the arrow icon

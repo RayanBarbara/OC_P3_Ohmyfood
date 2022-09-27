@@ -10,6 +10,7 @@
         border-radius: 20px;
         padding: 20px 0 20px 0;
         margin-bottom: 25px;
+        margin-right: 2%;
         width: 350px;
         cursor: pointer;
         @include card-shadow(.2);
@@ -58,6 +59,7 @@
             border-radius: 3px;
             text-align: center;
             padding: 5px 0 5px 0;
+            //Deal with position: relative blank space
             margin-bottom: -50px;
             width: 75px;
             @include text-font(16px, normal, green);
@@ -119,7 +121,6 @@
 @media (min-width: $breakpoint-computer) {
     .card {
         &-prev {
-
             //Change restaurant image to fit screen size
             &__image {
                 @include picture-scaling(230px, 100px);

@@ -18,6 +18,7 @@
         &-rest {
             //Horizontally align items and space them evenly on the x-axis
             display: flex;
+            flex-flow: row wrap;
             justify-content: space-evenly;
             //Add a small gap between items
             gap: 1.5%;

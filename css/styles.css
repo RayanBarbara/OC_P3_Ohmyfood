@@ -9,8 +9,9 @@
 
 .form .fa-solid {
   background-color: #EDEDED;
-  padding: 5px;
+  border-right: 1px solid lightgray;
   border-radius: 5px 0 0 5px;
+  padding: 5px;
 }
 
 footer .fa-solid {
@@ -78,7 +79,7 @@ a {
   display: flex;
   justify-content: space-between;
   background-color: white;
-  padding: 15px 35% 5px 15px;
+  padding: 15px 33% 5px 15px;
 }
 .header-restaurant .fa-solid {
   position: relative;
@@ -94,17 +95,14 @@ a {
 }
 
 @media (min-width: 768px) {
-  .header-homepage {
-    justify-content: space-between;
-    padding: 15px 0 5px 15px;
-  }
   .header-homepage #logo {
     width: 130px;
     height: auto;
     object-fit: cover;
   }
   .header-restaurant {
-    justify-content: flex-start;
+    justify-content: center;
+    padding: 15px 0 5px 0;
   }
   .header-restaurant .fa-solid {
     display: none;
@@ -127,6 +125,7 @@ a {
 @media (min-width: 768px) {
   .nav-rest {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     gap: 1.5%;
   }
@@ -138,7 +137,7 @@ a {
 }
 .form {
   background-color: white;
-  border: 1px solid #EDEDED;
+  border: 1px solid lightgray;
   border-radius: 7px;
   width: fit-content;
 }
@@ -221,6 +220,7 @@ footer a:hover {
   border-radius: 20px;
   padding: 20px 0 20px 0;
   margin-bottom: 25px;
+  margin-right: 2%;
   width: 350px;
   cursor: pointer;
   box-shadow: 3px 3px 13px 1px rgba(0, 0, 0, 0.2);
@@ -438,9 +438,9 @@ footer a:hover {
 
 @media (min-width: 768px) {
   .information .exploration {
-    background-color: #EDEDED;
+    background-color: #FAFAFA;
     padding: 20px 0 20px 0;
-    order: 1;
+    order: 2;
   }
   .information .exploration h2 {
     margin: 0 0 10px 0;
@@ -451,8 +451,8 @@ footer a:hover {
   }
   .information .location {
     justify-content: flex-start;
-    background-color: #FAFAFA;
-    order: 2;
+    background-color: #EDEDED;
+    order: 1;
   }
   .information .location #location_smartphone {
     display: none;
@@ -475,6 +475,12 @@ footer a:hover {
     display: flex;
     gap: 2%;
   }
+  .information .explanation .cards .card-expl h5 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+  }
   .information .explanation h1 {
     margin: 0 0 20px 0;
   }
@@ -491,6 +497,11 @@ footer a:hover {
   }
   #restaurants h2 {
     margin-top: 0px;
+  }
+}
+@media (min-width: 768px) {
+  #restaurants {
+    margin-bottom: 59px;
   }
 }
 .restaurant-preview {
