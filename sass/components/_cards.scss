@@ -82,7 +82,7 @@
         border-radius: 15px;
         margin-bottom: 15px;
         padding: 10px 15px 10px 15px;
-        min-width: 275px;
+        min-width: 325px;
         cursor: pointer;
         @include card-shadow(0.1);
 
@@ -114,6 +114,10 @@
         &-expl {
             //Change width to fit screen size
             width: max-content;
+        }
+
+        &-dish{
+            width: 325px;
         }
     }
 }

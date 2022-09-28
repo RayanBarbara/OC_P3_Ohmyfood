@@ -279,7 +279,7 @@ footer a:hover {
   border-radius: 15px;
   margin-bottom: 15px;
   padding: 10px 15px 10px 15px;
-  min-width: 275px;
+  min-width: 325px;
   cursor: pointer;
   box-shadow: 3px 3px 13px 1px rgba(0, 0, 0, 0.1);
 }
@@ -312,6 +312,9 @@ footer a:hover {
 @media (min-width: 768px) {
   .card-expl {
     width: max-content;
+  }
+  .card-dish {
+    width: 325px;
   }
 }
 @media (min-width: 1025px) {
