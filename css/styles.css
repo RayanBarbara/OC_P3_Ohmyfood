@@ -29,6 +29,7 @@ body {
   margin: 0;
   padding: 0;
   user-select: none;
+  z-index: 0;
 }
 
 figure {
@@ -332,6 +333,7 @@ footer a:hover {
   display: inline-block;
   border: none;
   margin: 0;
+  z-index: 0;
 }
 .lbl--circle {
   height: 10px;
@@ -367,6 +369,46 @@ footer a:hover {
   .list-footer {
     flex-flow: row wrap;
     justify-content: space-evenly;
+  }
+}
+.loader-spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  animation: background-shift 5s ease forwards;
+}
+.loader-spinner::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #F5F5F5;
+  border-top-color: #99E2D0;
+  border-radius: 50%;
+  animation: loading 4s ease forwards;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes background-shift {
+  from {
+    background: #333333;
+    opacity: 1;
+    z-index: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
   }
 }
 .information {

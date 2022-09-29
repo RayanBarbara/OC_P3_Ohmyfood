@@ -1,0 +1,46 @@
+.loader {
+    &-spinner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        animation: background-shift 5s ease forwards;
+
+        &::after {
+            content: "";
+            width: 75px;
+            height: 75px;
+            border: 15px solid $secondary-grey;
+            border-top-color: $tertiary-color;
+            border-radius: 50%;
+            animation: loading 4s ease forwards;
+        }
+    }
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes background-shift {
+    from{
+        background: $loader-background;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    to{
+        opacity: 0;
+        z-index: -1;
+    }
+}
