@@ -1,3 +1,4 @@
+//Location icon
 .information {
     .location {
         .fa-location-dot {
@@ -14,6 +15,7 @@
     }
 }
 
+//Location icon
 .form {
     .fa-solid {
         background-color: $primary-grey;
@@ -23,6 +25,78 @@
     }
 }
 
+//Heart animation of card preview from the homepage
+.card-prev__heart {
+    position: relative;
+    left: 270px;
+    top: 20px;
+    margin-bottom: -30px;
+
+    .fa-regular {
+        font-size: 32px;
+        color: black;
+        z-index: 0;
+        transition: 2s ease;
+    }
+
+    .fa-solid {
+        position: relative;
+        left: 36px;
+        font-size: 32px;
+        color: transparent;
+        background-image: linear-gradient(to top, #ff79da, #9356dc);
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+
+        z-index: 1;
+        transition: 4s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &:hover+.fa-regular {
+            color: transparent;
+        }
+    }
+}
+
+//Heart animation of card preview from the menus page
+.menus-info__heart {
+    cursor: pointer;
+
+    .fa-regular {
+        font-size: 32px;
+        color: black;
+        z-index: 0;
+        transition: 2s ease;
+    }
+
+    .fa-solid {
+        position: relative;
+        left: 36px;
+        font-size: 32px;
+        color: transparent;
+        background-image: linear-gradient(to top, #ff79da, #9356dc);
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+
+        z-index: 1;
+        transition: 4s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &:hover+.fa-regular {
+            color: transparent;
+        }
+    }
+}
+
+//Cutlery icons
 footer {
     .fa-solid {
         margin-right: 15px;
@@ -38,5 +112,13 @@ footer {
                 margin: 0 5px 0 0;
             }
         }
+    }
+}
+
+@media (min-width: $breakpoint-computer) {
+    .card-prev__heart {
+        left: 150px;
+        top: 25px;
+        margin-bottom: -40px;
     }
 }

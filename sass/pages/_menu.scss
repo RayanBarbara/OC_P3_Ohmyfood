@@ -6,7 +6,7 @@
     @include picture-scaling(100%, 250px);
 }
 
-#menus {
+.menus {
     //Position menu block on the preview picture
     position: relative;
     bottom: 45px;
@@ -15,8 +15,13 @@
     margin: 0 0 -45px 0;
     padding: 40px 15px 40px 15px;
 
-    h2 {
-        margin-top: 0px;
+    &-info{
+        display: flex;
+        justify-content: space-between;
+
+        &__heading{
+            margin-top: 0px;
+        }
     }
 
     h5 {
@@ -49,9 +54,5 @@
         //Specify the alignment of the picture
         object-position: 50% 60%;
         @include picture-scaling(100%, 250px);
-    }
-
-    #menus{
-        border-radius: 0;
     }
 }

@@ -104,27 +104,9 @@
 //Tablet version SCSS for the homepage
 @media (min-width: $breakpoint-tablet) {
     .information {
-        .exploration {
-            background-color: $tertiary-grey;
-            padding: 20px 0 20px 0;
-            //Change the order of the section
-            order: 2;
-
-            h2 {
-                margin: 0 0 10px 0;
-            }
-
-            p {
-                //Ideal width size
-                width: max-content;
-                margin: 0 0 10px 0;
-            }
-        }
-
         .location {
             //Items are packed toward the left edge of the container
             justify-content: flex-start;
-            background-color: $primary-grey;
             order: 1;
 
             #location_smartphone {
@@ -147,6 +129,22 @@
             }
         }
 
+        .exploration {
+            padding: 20px 0 20px 0;
+            //Change the order of the section
+            order: 2;
+
+            h2 {
+                margin: 0 0 10px 0;
+            }
+
+            p {
+                //Ideal width size
+                width: max-content;
+                margin: 0 0 10px 0;
+            }
+        }
+
         .explanation {
             padding: 0 0 0 15px;
             order: 3;
@@ -157,8 +155,8 @@
                 //Add a small gap between items
                 gap: 2%;
 
-                .card-expl{
-                    h5{
+                .card-expl {
+                    h5 {
                         @include text-font(16px, bold, black);
                     }
                 }
@@ -191,8 +189,4 @@
 
 //Computer version SCSS for the homepage
 @media (min-width: $breakpoint-tablet) {
-    #restaurants{
-        //Deal with the position: relative blank space
-        margin-bottom: 59px;
-    }
 }
