@@ -346,6 +346,37 @@ footer a:hover {
   min-width: 325px;
   cursor: pointer;
   box-shadow: 3px 3px 13px 1px rgba(0, 0, 0, 0.1);
+  animation: appear 4.5s both;
+}
+.card-dish:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.card-dish:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.card-dish:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.card-dish:nth-child(4) {
+  animation-delay: 1.2s;
+}
+.card-dish:nth-child(5) {
+  animation-delay: 1.5s;
+}
+.card-dish:nth-child(6) {
+  animation-delay: 1.8s;
+}
+.card-dish:nth-child(7) {
+  animation-delay: 2.1s;
+}
+.card-dish:nth-child(8) {
+  animation-delay: 2.4s;
+}
+.card-dish:nth-child(9) {
+  animation-delay: 2.7s;
+}
+.card-dish:nth-child(10) {
+  animation-delay: 3s;
 }
 .card-dish__heading {
   margin: 0;
@@ -390,6 +421,16 @@ footer a:hover {
   .card-prev__label {
     left: 150px;
     bottom: 110px;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 .lbl {

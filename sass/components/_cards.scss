@@ -83,6 +83,8 @@
         min-width: 325px;
         cursor: pointer;
         @include card-shadow(0.1);
+        @include animation-delay;
+        animation: appear 4.5s both;
 
         &__heading {
             margin: 0;
@@ -136,3 +138,15 @@
         }
     }
 }
+
+@keyframes appear{
+    from{
+      opacity: 0;
+      transform: translateY(20%);
+    }
+    
+    to{
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }

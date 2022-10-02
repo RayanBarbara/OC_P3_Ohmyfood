@@ -44,6 +44,15 @@
 }
 
 //Part box shadow
-@mixin part-shadow{
-    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.1);
+@mixin part-shadow {
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+//Animation delay loop
+@mixin animation-delay {
+    @for $i from 1 to 11 {
+        &:nth-child(#{$i}) {
+            animation-delay: (.3s * $i);
+        }
+    }
 }
