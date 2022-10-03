@@ -89,6 +89,7 @@ footer .fa-solid {
     left: 150px;
     top: 25px;
     margin-bottom: -40px;
+    margin-right: 100px;
   }
 }
 body {
@@ -413,6 +414,9 @@ footer a:hover {
   }
 }
 @media (min-width: 1025px) {
+  .card-prev {
+    margin-bottom: 87px;
+  }
   .card-prev__image {
     width: 230px;
     height: 100px;

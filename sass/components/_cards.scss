@@ -125,6 +125,7 @@
 @media (min-width: $breakpoint-computer) {
     .card {
         &-prev {
+            margin-bottom: 87px;
             //Change restaurant image to fit screen size
             &__image {
                 @include picture-scaling(230px, 100px);
