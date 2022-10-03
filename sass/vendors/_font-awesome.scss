@@ -48,7 +48,6 @@
         background-clip: text;
         -webkit-background-clip: text;
         opacity: 0;
-
         z-index: 1;
         transition: 4s ease;
 
@@ -64,7 +63,6 @@
 
 //Heart animation of card preview from the menus page
 .menus-info__heart {
-    cursor: pointer;
 
     .fa-regular {
         font-size: 32px;
@@ -82,9 +80,9 @@
         background-clip: text;
         -webkit-background-clip: text;
         opacity: 0;
-
         z-index: 1;
         transition: 4s ease;
+        cursor: pointer;
 
         &:hover {
             opacity: 1;
@@ -93,6 +91,15 @@
         &:hover+.fa-regular {
             color: transparent;
         }
+    }
+}
+
+.card-dish {
+    .fa-check {
+        color: #99E2D0;
+        position: relative;
+        top: 6px;
+        left: 5px;
     }
 }
 

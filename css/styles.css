@@ -45,9 +45,6 @@
   color: transparent;
 }
 
-.menus-info__heart {
-  cursor: pointer;
-}
 .menus-info__heart .fa-regular {
   font-size: 32px;
   color: black;
@@ -65,12 +62,20 @@
   opacity: 0;
   z-index: 1;
   transition: 4s ease;
+  cursor: pointer;
 }
 .menus-info__heart .fa-solid:hover {
   opacity: 1;
 }
 .menus-info__heart .fa-solid:hover + .fa-regular {
   color: transparent;
+}
+
+.card-dish .fa-check {
+  color: #99E2D0;
+  position: relative;
+  top: 6px;
+  left: 5px;
 }
 
 footer .fa-solid {
@@ -339,12 +344,13 @@ footer a:hover {
 }
 .card-dish {
   display: flex;
-  flex-flow: column wrap;
+  justify-content: space-between;
   background-color: white;
   border-radius: 15px;
   margin-bottom: 15px;
-  padding: 10px 15px 10px 15px;
   min-width: 325px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   cursor: pointer;
   box-shadow: 3px 3px 13px 1px rgba(0, 0, 0, 0.1);
   animation: appear 4.5s both;
@@ -380,6 +386,7 @@ footer a:hover {
   animation-delay: 3s;
 }
 .card-dish__heading {
+  display: inline;
   margin: 0;
   font-family: Roboto;
   font-size: 16px;
@@ -388,7 +395,8 @@ footer a:hover {
 }
 .card-dish__info {
   display: flex;
-  justify-content: space-between;
+  flex-flow: column wrap;
+  margin: 10px 0 10px 15px;
 }
 .card-dish__byline {
   margin: 10px 0 0 0;
@@ -398,11 +406,37 @@ footer a:hover {
   color: black;
 }
 .card-dish__price {
-  margin: 10px 0 0 0;
+  margin: 40px 0 10px 0;
   font-family: Roboto;
   font-size: 14px;
   font-weight: bold;
   color: black;
+}
+.card-dish__check {
+  display: flex;
+}
+.card-dish__circle {
+  position: relative;
+  top: 20px;
+  left: 15px;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  animation-delay: 2s;
+}
+.card-dish__checkmark {
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  width: 60px;
+  margin: 0 -61px 0 15px;
+  transition: margin-right 1.5s;
+}
+.card-dish:hover .card-dish__checkmark {
+  margin-right: 0;
+}
+.card-dish:hover .card-dish__circle {
+  animation: rotate-three-quarter 2s ease forwards;
 }
 
 @media (min-width: 768px) {
@@ -410,7 +444,7 @@ footer a:hover {
     width: max-content;
   }
   .card-dish {
-    width: 325px;
+    width: 350px;
   }
 }
 @media (min-width: 1025px) {
@@ -435,6 +469,14 @@ footer a:hover {
   to {
     transform: translateY(0%);
     opacity: 1;
+  }
+}
+@keyframes rotate-three-quarter {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 .lbl {

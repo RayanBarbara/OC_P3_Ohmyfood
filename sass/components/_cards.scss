@@ -75,18 +75,20 @@
     &-dish {
         //Vertically align dishes from the menu
         display: flex;
-        flex-flow: column wrap;
+        justify-content: space-between;
         background-color: white;
         border-radius: 15px;
         margin-bottom: 15px;
-        padding: 10px 15px 10px 15px;
         min-width: 325px;
+        overflow: hidden;
+        text-overflow: ellipsis;
         cursor: pointer;
         @include card-shadow(0.1);
         @include animation-delay;
         animation: appear 4.5s both;
 
         &__heading {
+            display: inline;
             margin: 0;
             @include text-font(16px, bold, black);
         }
@@ -94,7 +96,8 @@
         &__info {
             //Horizontally align dishes supplementary information and price before spacing them to both edge of the container
             display: flex;
-            justify-content: space-between;
+            flex-flow: column wrap;
+            margin: 10px 0 10px 15px;
         }
 
         &__byline {
@@ -103,8 +106,39 @@
         }
 
         &__price {
-            margin: 10px 0 0 0;
+            margin: 40px 0 10px 0;
             @include text-font(14px, bold, black);
+        }
+
+        &__check {
+            display: flex;
+        }
+
+        &__circle {
+            position: relative;
+            top: 20px;
+            left: 15px;
+            background-color: white;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            animation-delay: 2s;
+        }
+
+        &__checkmark {
+            background-color: #99E2D0;
+            border-radius: 0 15px 15px 0;
+            width: 60px;
+            margin: 0 -61px 0 15px;
+            transition: margin-right 1.5s;
+        }
+
+        &:hover .card-dish__checkmark {
+            margin-right: 0;
+        }
+
+        &:hover .card-dish__circle {
+            animation: rotate-three-quarter 2s ease forwards;
         }
     }
 }
@@ -116,8 +150,8 @@
             width: max-content;
         }
 
-        &-dish{
-            width: 325px;
+        &-dish {
+            width: 350px;
         }
     }
 }
@@ -126,6 +160,7 @@
     .card {
         &-prev {
             margin-bottom: 87px;
+
             //Change restaurant image to fit screen size
             &__image {
                 @include picture-scaling(230px, 100px);
@@ -140,14 +175,24 @@
     }
 }
 
-@keyframes appear{
-    from{
-      opacity: 0;
-      transform: translateY(20%);
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20%);
     }
-    
-    to{
-      transform: translateY(0%);
-      opacity: 1;
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
     }
-  }
+}
+
+@keyframes rotate-three-quarter {
+    from {
+        transform: rotate(90deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
