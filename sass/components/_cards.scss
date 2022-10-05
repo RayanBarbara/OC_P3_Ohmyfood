@@ -101,12 +101,12 @@
         }
 
         &__byline {
-            margin: 10px 0 0 0;
+            margin: 5px 0 0 0;
             @include text-font(14px, normal, black);
         }
 
         &__price {
-            margin: 40px 0 10px 0;
+            margin: 34px 0 5px 0;
             @include text-font(14px, bold, black);
         }
 
@@ -116,7 +116,7 @@
 
         &__circle {
             position: relative;
-            top: 20px;
+            top: 17px;
             left: 15px;
             background-color: white;
             height: 30px;
@@ -151,7 +151,7 @@
         }
 
         &-dish {
-            width: 350px;
+            width: 360px;
         }
     }
 }
@@ -163,13 +163,13 @@
 
             //Change restaurant image to fit screen size
             &__image {
-                @include picture-scaling(230px, 100px);
+                @include picture-scaling(240px, 110px);
             }
 
             //Re-position green label
             &__label {
-                left: 150px;
-                bottom: 110px;
+                left: 160px;
+                bottom: 120px;
             }
         }
     }

@@ -30,6 +30,7 @@
     position: relative;
     left: 270px;
     top: 20px;
+    margin-right: 250px;
     margin-bottom: -30px;
 
     .fa-regular {
@@ -124,9 +125,9 @@ footer {
 
 @media (min-width: $breakpoint-computer) {
     .card-prev__heart {
-        left: 150px;
-        top: 25px;
+        left: 160px;
+        top: 20px;
         margin-bottom: -40px;
-        margin-right: 100px;
+        margin-right: 140px;
     }
 }

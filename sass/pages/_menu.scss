@@ -56,3 +56,14 @@
         @include picture-scaling(100%, 250px);
     }
 }
+
+@media (min-width: $breakpoint-computer){
+    .menus{
+        .menu{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            gap: 2%;
+        }
+    }
+}

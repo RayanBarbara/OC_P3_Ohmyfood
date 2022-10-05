@@ -21,13 +21,25 @@
             flex-flow: row wrap;
             justify-content: space-evenly;
             //Add a small gap between items
-            gap: 1.5%;
+            gap: 5%;
         }
 
         &-dishes{
             display: flex;
             flex-flow: row wrap;
             gap: 1%;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-computer){
+    .nav{
+        &-rest {
+            justify-content: flex-start;
+        }
+
+        &-dishes{
+            flex-flow: column wrap;
         }
     }
 }

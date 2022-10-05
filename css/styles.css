@@ -18,6 +18,7 @@
   position: relative;
   left: 270px;
   top: 20px;
+  margin-right: 250px;
   margin-bottom: -30px;
 }
 .card-prev__heart .fa-regular {
@@ -82,19 +83,19 @@ footer .fa-solid {
   margin-right: 15px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .information .explanation .fa-solid {
     color: grey;
     line-height: 25px;
     margin: 0 5px 0 0;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .card-prev__heart {
-    left: 150px;
-    top: 25px;
+    left: 160px;
+    top: 20px;
     margin-bottom: -40px;
-    margin-right: 100px;
+    margin-right: 140px;
   }
 }
 body {
@@ -166,7 +167,7 @@ a {
   object-fit: cover;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .header-homepage #logo {
     width: 130px;
     height: auto;
@@ -194,17 +195,25 @@ a {
   padding: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .nav-rest {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    gap: 1.5%;
+    gap: 5%;
   }
   .nav-dishes {
     display: flex;
     flex-flow: row wrap;
     gap: 1%;
+  }
+}
+@media (min-width: 1200px) {
+  .nav-rest {
+    justify-content: flex-start;
+  }
+  .nav-dishes {
+    flex-flow: column wrap;
   }
 }
 .form {
@@ -245,7 +254,7 @@ footer a:hover {
   color: #9356DC;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   footer h5 {
     text-align: center;
   }
@@ -399,14 +408,14 @@ footer a:hover {
   margin: 10px 0 10px 15px;
 }
 .card-dish__byline {
-  margin: 10px 0 0 0;
+  margin: 5px 0 0 0;
   font-family: Roboto;
   font-size: 14px;
   font-weight: normal;
   color: black;
 }
 .card-dish__price {
-  margin: 40px 0 10px 0;
+  margin: 34px 0 5px 0;
   font-family: Roboto;
   font-size: 14px;
   font-weight: bold;
@@ -417,7 +426,7 @@ footer a:hover {
 }
 .card-dish__circle {
   position: relative;
-  top: 20px;
+  top: 17px;
   left: 15px;
   background-color: white;
   height: 30px;
@@ -439,26 +448,26 @@ footer a:hover {
   animation: rotate-three-quarter 2s ease forwards;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .card-expl {
     width: max-content;
   }
   .card-dish {
-    width: 350px;
+    width: 360px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
   .card-prev {
     margin-bottom: 87px;
   }
   .card-prev__image {
-    width: 230px;
-    height: 100px;
+    width: 240px;
+    height: 110px;
     object-fit: cover;
   }
   .card-prev__label {
-    left: 150px;
-    bottom: 110px;
+    left: 160px;
+    bottom: 120px;
   }
 }
 @keyframes appear {
@@ -515,7 +524,7 @@ footer a:hover {
   color: white;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .list-footer {
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -631,7 +640,7 @@ footer a:hover {
   object-position: 50% 90%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .information .location {
     justify-content: flex-start;
     order: 1;
@@ -735,12 +744,20 @@ footer a:hover {
   margin: 40px 0 40px 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .restaurant-preview {
     object-position: 50% 60%;
     width: 100%;
     height: 250px;
     object-fit: cover;
+  }
+}
+@media (min-width: 1200px) {
+  .menus .menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2%;
   }
 }
 
