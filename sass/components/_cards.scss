@@ -97,11 +97,16 @@
             //Horizontally align dishes supplementary information and price before spacing them to both edge of the container
             display: flex;
             flex-flow: column wrap;
+            white-space: nowrap;
             margin: 10px 0 10px 15px;
         }
 
         &__byline {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 293px;
             margin: 5px 0 0 0;
+            transition: width 1.5s;
             @include text-font(14px, normal, black);
         }
 
@@ -139,6 +144,10 @@
 
         &:hover .card-dish__circle {
             animation: rotate-three-quarter 2s ease forwards;
+        }
+
+        &:hover .card-dish__byline{
+            width: 250px;
         }
     }
 }
