@@ -1,6 +1,10 @@
 //Styling of navigation elements
 
 .nav {
+    &-expl {
+        padding-left: 10px;
+    }
+
     &-rest {
         //Vertically align and center items
         display: flex;
@@ -8,13 +12,20 @@
         align-items: center;
     }
 
-    &-dishes{
+    &-dishes {
         padding: 0;
     }
 }
 
 @media (min-width: $breakpoint-tablet) {
     .nav {
+        &-expl {
+            //Horizontally align explanation cards
+            display: flex;
+            //Add a small gap between items
+            gap: 2%;
+        }
+
         &-rest {
             //Horizontally align items and space them evenly on the x-axis
             display: flex;
@@ -24,7 +35,7 @@
             gap: 5%;
         }
 
-        &-dishes{
+        &-dishes {
             display: flex;
             flex-flow: row wrap;
             gap: 1%;
@@ -32,13 +43,13 @@
     }
 }
 
-@media (min-width: $breakpoint-computer){
-    .nav{
+@media (min-width: $breakpoint-computer) {
+    .nav {
         &-rest {
             justify-content: flex-start;
         }
 
-        &-dishes{
+        &-dishes {
             flex-flow: column wrap;
         }
     }

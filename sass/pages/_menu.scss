@@ -13,20 +13,20 @@
     background-color: $secondary-grey;
     border-radius: 45px 45px 0 0;
     margin: 0 0 -45px 0;
-    padding: 40px 15px 40px 15px;
+    padding: 40px 15px;
 
     &-info{
         display: flex;
         justify-content: space-between;
 
         &__heading{
-            margin-top: 0px;
+            margin-top: 0;
         }
     }
 
     h5 {
         position: relative;
-        @include text-font(16px, normal, black);
+        @include text-font(16px, $normal, $black);
 
         //Create the green underline
         &::before {
@@ -43,7 +43,7 @@
     span {
         display: flex;
         justify-content: center;
-        margin: 40px 0 40px 0;
+        margin: 40px 0;
     }
 
 }

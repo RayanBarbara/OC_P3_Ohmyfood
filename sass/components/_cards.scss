@@ -8,24 +8,33 @@
         display: flex;
         background-color: $secondary-grey;
         border-radius: 20px;
-        padding: 20px 0 20px 0;
+        padding: 20px 0;
         margin-bottom: 25px;
         margin-right: 2%;
         width: 350px;
         cursor: pointer;
         @include card-shadow(.2);
 
+        &__heading {
+            margin: 0 0 0 20px;
+        }
+
         &:hover {
             background-color: $hover-purple;
+        }
+
+        //Change icons color when hovering on the cards
+        &:hover .fa-solid {
+            color: $primary-color;
         }
     }
 
     //Restaurants cards
     &-prev {
-        background-color: white;
+        background-color: $white;
         border-radius: 15px;
         margin-bottom: 20px;
-        @include card-shadow(0.2);
+        @include card-shadow(.2);
 
         //Style the restaurant image 
         &__image {
@@ -59,15 +68,15 @@
             background-color: $tertiary-color;
             border-radius: 3px;
             text-align: center;
-            padding: 5px 0 5px 0;
+            padding: 5px 0;
             //Deal with position: relative blank space
             margin-bottom: -50px;
             width: 75px;
-            @include text-font(16px, normal, green);
+            @include text-font(16px, $normal, green);
         }
 
         &:hover {
-            @include card-shadow(0.4);
+            @include card-shadow(.4);
         }
     }
 
@@ -76,21 +85,21 @@
         //Vertically align dishes from the menu
         display: flex;
         justify-content: space-between;
-        background-color: white;
+        background-color: $white;
         border-radius: 15px;
         margin-bottom: 15px;
         min-width: 325px;
         overflow: hidden;
         text-overflow: ellipsis;
         cursor: pointer;
-        @include card-shadow(0.1);
+        @include card-shadow(.1);
         @include animation-delay;
         animation: appear 4.5s both;
 
         &__heading {
             display: inline;
             margin: 0;
-            @include text-font(16px, bold, black);
+            @include text-font(16px, $bold, $black);
         }
 
         &__info {
@@ -107,12 +116,12 @@
             width: 293px;
             margin: 5px 0 0 0;
             transition: width 1.5s;
-            @include text-font(14px, normal, black);
+            @include text-font(14px, $normal, $black);
         }
 
         &__price {
             margin: 34px 0 5px 0;
-            @include text-font(14px, bold, black);
+            @include text-font(14px, $bold, $black);
         }
 
         &__check {
@@ -123,7 +132,7 @@
             position: relative;
             top: 17px;
             left: 15px;
-            background-color: white;
+            background-color: $white;
             height: 30px;
             width: 30px;
             border-radius: 50%;
@@ -131,7 +140,7 @@
         }
 
         &__checkmark {
-            background-color: #99E2D0;
+            background-color: $tertiary-color;
             border-radius: 0 15px 15px 0;
             width: 60px;
             margin: 0 -61px 0 15px;
@@ -146,7 +155,7 @@
             animation: rotate-three-quarter 2s ease forwards;
         }
 
-        &:hover .card-dish__byline{
+        &:hover .card-dish__byline {
             width: 250px;
         }
     }
@@ -157,6 +166,11 @@
         &-expl {
             //Change width to fit screen size
             width: max-content;
+
+            &__heading {
+                margin: 3px 6px 0 0;
+                @include text-font(16px, $bold, $black);
+            }
         }
 
         &-dish {
@@ -184,6 +198,7 @@
     }
 }
 
+//Move checkmark from right to left 
 @keyframes appear {
     from {
         opacity: 0;
@@ -196,6 +211,7 @@
     }
 }
 
+//Make the circle containing the checkmark do a 270°
 @keyframes rotate-three-quarter {
     from {
         transform: rotate(90deg);

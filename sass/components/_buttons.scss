@@ -2,8 +2,8 @@
 
 .btn {
     cursor: pointer;
-    @include text-font(16px, 450, white);
-    @include button-shadow(0.2);
+    @include text-font(16px, 450, $white);
+    @include button-shadow(.2);
 
     //Round the right edges of the button
     &--rounded {
@@ -17,7 +17,7 @@
 
     //Greatly increase the button size
     &--big {
-        padding: 15px 20px 15px 20px;
+        padding: 15px 20px;
     }
 
     //Greatly increase the button length
@@ -28,12 +28,7 @@
 
     //Set a purple gradient color for the button
     &--purple {
-        background: linear-gradient(351deg, rgba(147, 86, 220, 1) 0%, rgba(255, 0, 243, 0.810) 100%);
-    }
-
-    //Set a blue color for the button
-    &--blue {
-        background-color: #0065FC;
+        background: linear-gradient(351deg,$primary-color 0%,$secondary-color 100%);
     }
 
     //Erase the button border

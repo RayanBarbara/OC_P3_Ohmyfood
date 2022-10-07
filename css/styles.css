@@ -1,5 +1,6 @@
 .information .location .fa-location-dot {
   line-height: 16px;
+  margin-top: 3px;
 }
 .information .explanation .fa-solid {
   color: grey;
@@ -23,7 +24,7 @@
 }
 .card-prev__heart .fa-regular {
   font-size: 32px;
-  color: black;
+  color: #000;
   z-index: 0;
   transition: 2s ease;
 }
@@ -32,7 +33,7 @@
   left: 36px;
   font-size: 32px;
   color: transparent;
-  background-image: linear-gradient(to top, #ff79da, #9356dc);
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
@@ -48,7 +49,7 @@
 
 .menus-info__heart .fa-regular {
   font-size: 32px;
-  color: black;
+  color: #000;
   z-index: 0;
   transition: 2s ease;
 }
@@ -57,7 +58,7 @@
   left: 36px;
   font-size: 32px;
   color: transparent;
-  background-image: linear-gradient(to top, #ff79da, #9356dc);
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
@@ -84,6 +85,9 @@ footer .fa-solid {
 }
 
 @media (min-width: 800px) {
+  .information .location .fa-location-dot {
+    margin-top: 0;
+  }
   .information .explanation .fa-solid {
     color: grey;
     line-height: 25px;
@@ -114,26 +118,26 @@ figure {
 h2 {
   font-family: Roboto;
   font-size: 28px;
-  font-weight: bold;
-  color: black;
+  font-weight: 700;
+  color: #000;
 }
 
 h5 {
   font-family: Roboto;
   font-size: 18px;
-  font-weight: bold;
-  color: black;
+  font-weight: 700;
+  color: #000;
 }
 
 p {
   font-family: Roboto;
   font-size: 18px;
-  font-weight: normal;
-  color: black;
+  font-weight: 400;
+  color: #000;
 }
 
 a {
-  color: black;
+  color: #000;
   text-decoration: none;
 }
 
@@ -151,7 +155,7 @@ a {
 .header-restaurant {
   display: flex;
   justify-content: space-between;
-  background-color: white;
+  background-color: #FFF;
   padding: 15px 33% 5px 15px;
 }
 .header-restaurant .fa-solid {
@@ -186,6 +190,9 @@ a {
     object-fit: cover;
   }
 }
+.nav-expl {
+  padding-left: 10px;
+}
 .nav-rest {
   display: flex;
   flex-flow: column wrap;
@@ -196,6 +203,10 @@ a {
 }
 
 @media (min-width: 800px) {
+  .nav-expl {
+    display: flex;
+    gap: 2%;
+  }
   .nav-rest {
     display: flex;
     flex-flow: row wrap;
@@ -217,7 +228,7 @@ a {
   }
 }
 .form {
-  background-color: white;
+  background-color: #FFF;
   border: 1px solid lightgray;
   border-radius: 7px;
   width: fit-content;
@@ -230,7 +241,7 @@ a {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 450;
-  color: black;
+  color: #000;
 }
 
 footer {
@@ -238,17 +249,17 @@ footer {
   padding: 10px 20px 15px 30px;
 }
 footer h5 {
-  margin: 10px 0 10px 0;
+  margin: 10px 0;
   font-family: Shrikhand;
   font-size: 18px;
-  font-weight: normal;
-  color: white;
+  font-weight: 400;
+  color: #FFF;
 }
 footer a {
   font-family: Roboto;
   font-size: 16px;
-  font-weight: normal;
-  color: white;
+  font-weight: 400;
+  color: #FFF;
 }
 footer a:hover {
   color: #9356DC;
@@ -264,7 +275,7 @@ footer a:hover {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 450;
-  color: white;
+  color: #FFF;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
 }
 .btn--rounded {
@@ -274,17 +285,14 @@ footer a:hover {
   border-radius: 50px;
 }
 .btn--big {
-  padding: 15px 20px 15px 20px;
+  padding: 15px 20px;
 }
 .btn--long {
   padding-left: 60px;
   padding-right: 60px;
 }
 .btn--purple {
-  background: linear-gradient(351deg, rgb(147, 86, 220) 0%, rgba(255, 0, 243, 0.81) 100%);
-}
-.btn--blue {
-  background-color: #0065FC;
+  background: linear-gradient(351deg, #9356DC 0%, #FF79DA 100%);
 }
 .btn--borderless {
   border: none;
@@ -298,18 +306,24 @@ footer a:hover {
   display: flex;
   background-color: #F5F5F5;
   border-radius: 20px;
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
   margin-bottom: 25px;
   margin-right: 2%;
   width: 350px;
   cursor: pointer;
   box-shadow: 3px 3px 13px 1px rgba(0, 0, 0, 0.2);
 }
+.card-expl__heading {
+  margin: 0 0 0 20px;
+}
 .card-expl:hover {
   background-color: rgba(150, 85, 220, 0.15);
 }
+.card-expl:hover .fa-solid {
+  color: #9356DC;
+}
 .card-prev {
-  background-color: white;
+  background-color: #FFF;
   border-radius: 15px;
   margin-bottom: 20px;
   box-shadow: 3px 3px 13px 1px rgba(0, 0, 0, 0.2);
@@ -340,12 +354,12 @@ footer a:hover {
   background-color: #99E2D0;
   border-radius: 3px;
   text-align: center;
-  padding: 5px 0 5px 0;
+  padding: 5px 0;
   margin-bottom: -50px;
   width: 75px;
   font-family: Roboto;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 400;
   color: green;
 }
 .card-prev:hover {
@@ -354,7 +368,7 @@ footer a:hover {
 .card-dish {
   display: flex;
   justify-content: space-between;
-  background-color: white;
+  background-color: #FFF;
   border-radius: 15px;
   margin-bottom: 15px;
   min-width: 325px;
@@ -399,8 +413,8 @@ footer a:hover {
   margin: 0;
   font-family: Roboto;
   font-size: 16px;
-  font-weight: bold;
-  color: black;
+  font-weight: 700;
+  color: #000;
 }
 .card-dish__info {
   display: flex;
@@ -416,15 +430,15 @@ footer a:hover {
   transition: width 1.5s;
   font-family: Roboto;
   font-size: 14px;
-  font-weight: normal;
-  color: black;
+  font-weight: 400;
+  color: #000;
 }
 .card-dish__price {
   margin: 34px 0 5px 0;
   font-family: Roboto;
   font-size: 14px;
-  font-weight: bold;
-  color: black;
+  font-weight: 700;
+  color: #000;
 }
 .card-dish__check {
   display: flex;
@@ -433,7 +447,7 @@ footer a:hover {
   position: relative;
   top: 17px;
   left: 15px;
-  background-color: white;
+  background-color: #FFF;
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -459,6 +473,13 @@ footer a:hover {
 @media (min-width: 800px) {
   .card-expl {
     width: max-content;
+  }
+  .card-expl__heading {
+    margin: 3px 6px 0 0;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
   }
   .card-dish {
     width: 360px;
@@ -515,7 +536,7 @@ footer a:hover {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 450;
-  color: white;
+  color: #FFF;
 }
 
 .list-footer {
@@ -528,8 +549,8 @@ footer a:hover {
   margin-bottom: 5px;
   font-family: Roboto;
   font-size: 16px;
-  font-weight: normal;
-  color: white;
+  font-weight: 400;
+  color: #FFF;
 }
 
 @media (min-width: 800px) {
@@ -569,7 +590,7 @@ footer a:hover {
 }
 @keyframes background-shift {
   from {
-    background: #333333;
+    background: #333;
     opacity: 1;
     z-index: 1;
   }
@@ -588,13 +609,13 @@ footer a:hover {
   background-color: rgba(210, 210, 210, 0.35);
   padding: 15px 15px 10px 15px;
 }
-.information .location #location_smartphone {
-  display: flex;
-}
-.information .location #location_smartphone h5 {
+.information .location__heading {
   margin: 0 0 0 20px;
 }
-.information .location #location_tablet {
+.information .location #location-smartphone {
+  display: flex;
+}
+.information .location #location-tablet {
   display: none;
 }
 .information .exploration {
@@ -604,10 +625,10 @@ footer a:hover {
   background-color: #FAFAFA;
   padding: 20px 0 40px 0;
 }
-.information .exploration h2 {
+.information .exploration__heading {
   margin-bottom: 20px;
 }
-.information .exploration p {
+.information .exploration__byline {
   text-align: center;
   margin: 20px 0 40px 0;
   width: 300px;
@@ -615,20 +636,11 @@ footer a:hover {
 .information .explanation {
   padding: 20px 10px 40px 30px;
 }
-.information .explanation .cards {
-  padding-left: 10px;
-}
-.information .explanation .cards .card-expl:hover .fa-solid {
-  color: #9356DC;
-}
-.information .explanation p {
+.information .explanation .lbl {
   position: relative;
   left: -10px;
   line-height: 12px;
   padding: 7px 7px 7px 8px;
-}
-.information .explanation h5 {
-  margin: 0 0 0 20px;
 }
 
 #restaurants {
@@ -653,27 +665,27 @@ footer a:hover {
     justify-content: flex-start;
     order: 1;
   }
-  .information .location #location_smartphone {
+  .information .location__heading {
+    margin: 5px 0 10px 0;
+  }
+  .information .location #location-smartphone {
     display: none;
   }
-  .information .location #location_tablet {
+  .information .location #location-tablet {
     display: flex;
     flex-flow: column wrap;
   }
-  .information .location #location_tablet h5 {
-    margin: 5px 0 10px 0;
-  }
-  .information .location #location_tablet button {
+  .information .location #location-tablet .btn {
     height: 26px;
   }
   .information .exploration {
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
     order: 2;
   }
-  .information .exploration h2 {
+  .information .exploration__heading {
     margin: 0 0 10px 0;
   }
-  .information .exploration p {
+  .information .exploration__byline {
     width: max-content;
     margin: 0 0 10px 0;
   }
@@ -681,32 +693,16 @@ footer a:hover {
     padding: 0 0 0 15px;
     order: 3;
   }
-  .information .explanation .cards {
-    display: flex;
-    gap: 2%;
-  }
-  .information .explanation .cards .card-expl h5 {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
-  }
-  .information .explanation h1 {
-    margin: 0 0 20px 0;
-  }
-  .information .explanation p {
+  .information .explanation .lbl {
     position: relative;
     left: -10px;
     line-height: 12px;
   }
-  .information .explanation h5 {
-    margin: 0 6px 0 0;
-  }
-  #restaurants {
+  .restaurants {
     padding-left: 15px;
   }
-  #restaurants h2 {
-    margin-top: 0px;
+  .restaurants__heading {
+    margin-top: 0;
   }
 }
 .restaurant-preview {
@@ -721,21 +717,21 @@ footer a:hover {
   background-color: #F5F5F5;
   border-radius: 45px 45px 0 0;
   margin: 0 0 -45px 0;
-  padding: 40px 15px 40px 15px;
+  padding: 40px 15px;
 }
 .menus-info {
   display: flex;
   justify-content: space-between;
 }
 .menus-info__heading {
-  margin-top: 0px;
+  margin-top: 0;
 }
 .menus h5 {
   position: relative;
   font-family: Roboto;
   font-size: 16px;
-  font-weight: normal;
-  color: black;
+  font-weight: 400;
+  color: #000;
 }
 .menus h5::before {
   position: absolute;
@@ -749,7 +745,7 @@ footer a:hover {
 .menus span {
   display: flex;
   justify-content: center;
-  margin: 40px 0 40px 0;
+  margin: 40px 0;
 }
 
 @media (min-width: 800px) {

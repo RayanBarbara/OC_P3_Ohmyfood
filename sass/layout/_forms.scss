@@ -1,7 +1,7 @@
 //Styling of forms elements
 
 .form {
-    background-color: white;
+    background-color: $white;
     border: 1px solid lightgray;
     border-radius: 7px;
     //Width use only the available space (never more than with max-content)
@@ -13,7 +13,7 @@
         width: 120px;
 
         &::placeholder {
-            @include text-font(14px, 450, black)
+            @include text-font(14px, 450, $black)
         }
     }
 }

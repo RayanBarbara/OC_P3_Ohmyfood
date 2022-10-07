@@ -5,12 +5,12 @@ footer {
     padding: 10px 20px 15px 30px;
 
     h5 {
-        margin: 10px 0 10px 0;
-        @include title-font(18px, normal, white);
+        margin: 10px 0;
+        @include title-font(18px, $normal, $white);
     }
 
     a {
-        @include text-font(16px, normal, white);
+        @include text-font(16px, $normal, $white);
 
         &:hover {
             color: $primary-color;

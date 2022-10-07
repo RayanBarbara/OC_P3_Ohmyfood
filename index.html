@@ -31,18 +31,18 @@
         </figure>
     </header>
 
-    <!--Div containing some information-->
+    <!--Div containing information about the website-->
     <div class="information">
 
         <!--Section containing location information-->
         <section class="location">
-            <div id="location_smartphone">
+            <div id="location-smartphone">
                 <i class="fa-solid fa-location-dot"></i>
-                <h5>Paris, Belleville</h5>
+                <h5 class="location__heading">Paris, Belleville</h5>
             </div>
             <!--Search form-->
-            <div id="location_tablet">
-                <h5>Find the best restaurants around you!</h5>
+            <div id="location-tablet">
+                <h5 class="location__heading">Find the best restaurants around you!</h5>
                 <form class="form">
                     <i class="fa-solid fa-location-dot"></i>
                     <input class="form__input" type="text" placeholder="Paris, Belleville">
@@ -53,8 +53,8 @@
 
         <!--Section describing the goal of the website-->
         <section class="exploration">
-            <h2>Book the menu you like</h2>
-            <p>Discover top-of-the-art restaurant we picked for you</p>
+            <h2 class="exploration__heading">Book the menu you like</h2>
+            <p class="exploration__byline">Discover top-of-the-art restaurant we picked for you</p>
             <!--Link directing the user to the restaurant part-->
             <a href="#restaurants">
                 <div class="btn btn--ellipse btn--big btn--borderless btn--purple">Explore our restaurants</div>
@@ -64,29 +64,29 @@
         <!--Section explaining how to use the website-->
         <section class="explanation">
             <h2>How it works</h2>
-            <div class="cards">
+            <nav class="nav-expl">
                 <article class="card-expl">
                     <p class="lbl lbl--circle lbl--small lbl--purple">1</p>
                     <i class="fa-solid fa-mobile-screen-button fa-lg"></i>
-                    <h5>Choose a restaurant</h5>
+                    <h5 class="card-expl__heading">Choose a restaurant</h5>
                 </article>
                 <article class="card-expl">
                     <p class="lbl lbl--circle lbl--small lbl--purple">2</p>
                     <i class="fa-solid fa-list fa-lg"></i>
-                    <h5>Create your menu</h5>
+                    <h5 class="card-expl__heading">Create your menu</h5>
                 </article>
                 <article class="card-expl">
                     <p class="lbl lbl--circle lbl--small lbl--purple">3</p>
                     <i class="fa-solid fa-store fa-lg"></i>
-                    <h5>Go enjoy it at the restaurant</h5>
+                    <h5 class="card-expl__heading">Go enjoy it at the restaurant</h5>
                 </article>
-            </div>
+            </nav>
         </section>
     </div>
 
     <!--Main content of the website containing a list of the restaurants that can pass a command for a given town-->
-    <main id="restaurants">
-        <h2>Restaurants</h2>
+    <main id="restaurants" class="restaurants">
+        <h2 class="restaurants__heading">Restaurants</h2>
         <!--Navigation listing the restaurants-->
         <nav class="nav-rest">
             <!--Article containing basic information about a restaurant and directing the user to the menu page-->

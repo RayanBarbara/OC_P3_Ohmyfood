@@ -10,19 +10,19 @@
         //Horizontally align and center icon and text
         display: flex;
         justify-content: center;
-        background-color: rgba(210, 210, 210, 0.35);
+        background-color: rgba(210, 210, 210, .35);
         padding: 15px 15px 10px 15px;
 
-        #location_smartphone {
-            //Horizontally align search form items
-            display: flex;
-
-            h5 {
-                margin: 0 0 0 20px;
-            }
+        &__heading {
+            margin: 0 0 0 20px;
         }
 
-        #location_tablet {
+        #location-smartphone {
+            //Horizontally align search form items
+            display: flex;
+        }
+
+        #location-tablet {
             //Do not display the item
             display: none;
         }
@@ -36,11 +36,11 @@
         background-color: $tertiary-grey;
         padding: 20px 0 40px 0;
 
-        h2 {
+        &__heading {
             margin-bottom: 20px;
         }
 
-        p {
+        &__byline {
             //Center text inside its container
             text-align: center;
             margin: 20px 0 40px 0;
@@ -52,28 +52,12 @@
     .explanation {
         padding: 20px 10px 40px 30px;
 
-        .cards {
-            padding-left: 10px;
-
-            .card-expl {
-
-                //Change icons color when hovering on the cards
-                &:hover .fa-solid {
-                    color: $primary-color;
-                }
-            }
-        }
-
-        p {
+        .lbl {
             //Position numbers inside the purple circle
             position: relative;
             left: -10px;
             line-height: 12px;
             padding: 7px 7px 7px 8px;
-        }
-
-        h5 {
-            margin: 0 0 0 20px;
         }
     }
 }
@@ -109,36 +93,36 @@
             justify-content: flex-start;
             order: 1;
 
-            #location_smartphone {
+            &__heading {
+                margin: 5px 0 10px 0;
+            }
+
+            #location-smartphone {
                 display: none;
             }
 
             //Styling of the search form
-            #location_tablet {
+            #location-tablet {
                 //Vertically align items
                 display: flex;
                 flex-flow: column wrap;
 
-                h5 {
-                    margin: 5px 0 10px 0;
-                }
-
-                button {
+                .btn {
                     height: 26px;
                 }
             }
         }
 
         .exploration {
-            padding: 20px 0 20px 0;
+            padding: 20px 0;
             //Change the order of the section
             order: 2;
 
-            h2 {
+            &__heading {
                 margin: 0 0 10px 0;
             }
 
-            p {
+            &__byline {
                 //Ideal width size
                 width: max-content;
                 margin: 0 0 10px 0;
@@ -149,40 +133,19 @@
             padding: 0 0 0 15px;
             order: 3;
 
-            .cards {
-                //Horizontally align explanation cards
-                display: flex;
-                //Add a small gap between items
-                gap: 2%;
-
-                .card-expl {
-                    h5 {
-                        @include text-font(16px, bold, black);
-                    }
-                }
-            }
-
-            h1 {
-                margin: 0 0 20px 0;
-            }
-
-            p {
+            .lbl {
                 position: relative;
                 left: -10px;
                 line-height: 12px;
             }
-
-            h5 {
-                margin: 0 6px 0 0;
-            }
         }
     }
 
-    #restaurants {
+    .restaurants {
         padding-left: 15px;
 
-        h2 {
-            margin-top: 0px;
+        &__heading {
+            margin-top: 0;
         }
     }
 }

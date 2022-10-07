@@ -22,6 +22,6 @@
     //Set the background color of the label to purple
     &--purple {
         background-color: $primary-color;
-        @include text-font(14px, 450, white);
+        @include text-font(14px, 450, $white);
     }
 }

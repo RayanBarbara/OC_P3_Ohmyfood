@@ -11,7 +11,7 @@
 
         &__link {
             margin-bottom: 5px;
-            @include text-font(16px, normal, white);
+            @include text-font(16px, $normal, $white);
         }
     }
 }

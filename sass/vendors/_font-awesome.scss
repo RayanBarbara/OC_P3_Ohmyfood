@@ -3,6 +3,7 @@
     .location {
         .fa-location-dot {
             line-height: 16px;
+            margin-top: 3px;
         }
     }
 
@@ -35,7 +36,7 @@
 
     .fa-regular {
         font-size: 32px;
-        color: black;
+        color: $black;
         z-index: 0;
         transition: 2s ease;
     }
@@ -45,7 +46,7 @@
         left: 36px;
         font-size: 32px;
         color: transparent;
-        background-image: linear-gradient(to top, #ff79da, #9356dc);
+        background-image: linear-gradient(to top, $secondary-color, $primary-color);
         background-clip: text;
         -webkit-background-clip: text;
         opacity: 0;
@@ -67,7 +68,7 @@
 
     .fa-regular {
         font-size: 32px;
-        color: black;
+        color: $black;
         z-index: 0;
         transition: 2s ease;
     }
@@ -77,7 +78,7 @@
         left: 36px;
         font-size: 32px;
         color: transparent;
-        background-image: linear-gradient(to top, #ff79da, #9356dc);
+        background-image: linear-gradient(to top, $secondary-color, $primary-color);
         background-clip: text;
         -webkit-background-clip: text;
         opacity: 0;
@@ -97,7 +98,7 @@
 
 .card-dish {
     .fa-check {
-        color: #99E2D0;
+        color: $tertiary-color;
         position: relative;
         top: 6px;
         left: 5px;
@@ -113,6 +114,12 @@ footer {
 
 @media (min-width: $breakpoint-tablet) {
     .information {
+        .location {
+            .fa-location-dot {
+                margin-top: 0;
+            }
+        }
+
         .explanation {
             .fa-solid {
                 color: grey;

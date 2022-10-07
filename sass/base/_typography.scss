@@ -1,16 +1,16 @@
 h2 {
-    @include text-font(28px, bold, black);
+    @include text-font(28px, $bold, $black);
 }
 
 h5 {
-    @include text-font(18px, bold, black);
+    @include text-font(18px, $bold, $black);
 }
 
 p {
-    @include text-font(18px, normal, black);
+    @include text-font(18px, $normal, $black);
 }
 
 a {
-    color: black;
+    color: $black;
     text-decoration: none;
 }

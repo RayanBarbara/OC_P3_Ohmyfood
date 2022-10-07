@@ -1,7 +1,6 @@
 @import 
     '../sass/utils/variables',
-    '../sass/utils/mixins',
-    '../sass/utils/functions';
+    '../sass/utils/mixins';
 
 @import
     '../sass/vendors/font-awesome';
@@ -21,7 +20,7 @@
     '../sass/components/cards',
     '../sass/components/labels',
     '../sass/components/lists',
-    '../sass/components/loader';
+    '../sass/components/loaders';
 
 @import
     '../sass/pages/home',

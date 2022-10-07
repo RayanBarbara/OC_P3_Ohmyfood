@@ -18,7 +18,7 @@
         //Horizontally align logo and arrow icon before spacing them
         display: flex;
         justify-content: space-between;
-        background-color: white;
+        background-color: $white;
         padding: 15px 33% 5px 15px;
 
         .fa-solid {
