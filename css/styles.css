@@ -244,29 +244,29 @@ a {
   color: #000;
 }
 
-footer {
+.footer {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 10px 20px 15px 30px;
 }
-footer h5 {
+.footer__heading {
   margin: 10px 0;
   font-family: Shrikhand;
   font-size: 18px;
   font-weight: 400;
   color: #FFF;
 }
-footer a {
+.footer a {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
   color: #FFF;
 }
-footer a:hover {
+.footer a:hover {
   color: #9356DC;
 }
 
 @media (min-width: 800px) {
-  footer h5 {
+  .footer__heading {
     text-align: center;
   }
 }
@@ -374,9 +374,9 @@ footer a:hover {
   min-width: 325px;
   overflow: hidden;
   text-overflow: ellipsis;
+  animation: appear 4.5s both;
   cursor: pointer;
   box-shadow: 3px 3px 13px 1px rgba(0, 0, 0, 0.1);
-  animation: appear 4.5s both;
 }
 .card-dish:nth-child(1) {
   animation-delay: 0.3s;
@@ -409,7 +409,6 @@ footer a:hover {
   animation-delay: 3s;
 }
 .card-dish__heading {
-  display: inline;
   margin: 0;
   font-family: Roboto;
   font-size: 16px;

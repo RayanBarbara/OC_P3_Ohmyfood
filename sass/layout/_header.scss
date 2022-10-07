@@ -19,6 +19,7 @@
         display: flex;
         justify-content: space-between;
         background-color: $white;
+        //Add extra right padding to center logo while pushing the arrow to the left
         padding: 15px 33% 5px 15px;
 
         .fa-solid {

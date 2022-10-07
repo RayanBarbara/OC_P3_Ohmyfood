@@ -4,7 +4,7 @@
 
     //Information section cards
     &-expl {
-        //Vertically align items
+        //Horizontally align text and icons
         display: flex;
         background-color: $secondary-grey;
         border-radius: 20px;
@@ -62,6 +62,7 @@
 
         //Style the restaurant card green label
         &__label {
+            //Position the label
             position: relative;
             left: 265px;
             bottom: 170px;
@@ -89,15 +90,15 @@
         border-radius: 15px;
         margin-bottom: 15px;
         min-width: 325px;
+        //Text ellipsis when it overflows
         overflow: hidden;
         text-overflow: ellipsis;
+        animation: appear 4.5s both;
         cursor: pointer;
         @include card-shadow(.1);
         @include animation-delay;
-        animation: appear 4.5s both;
 
         &__heading {
-            display: inline;
             margin: 0;
             @include text-font(16px, $bold, $black);
         }
@@ -111,6 +112,7 @@
         }
 
         &__byline {
+            //Text ellipsis when it overflows
             overflow: hidden;
             text-overflow: ellipsis;
             width: 293px;
@@ -129,6 +131,7 @@
         }
 
         &__circle {
+            //Position the white circle
             position: relative;
             top: 17px;
             left: 15px;
@@ -139,6 +142,7 @@
             animation-delay: 2s;
         }
 
+        //Style a green square containing the circle with the checkmark
         &__checkmark {
             background-color: $tertiary-color;
             border-radius: 0 15px 15px 0;

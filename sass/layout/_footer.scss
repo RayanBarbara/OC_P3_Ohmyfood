@@ -1,10 +1,10 @@
 //Styling of the footer for the homepage and menus
 
-footer {
+.footer {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 10px 20px 15px 30px;
 
-    h5 {
+    &__heading {
         margin: 10px 0;
         @include title-font(18px, $normal, $white);
     }
@@ -19,8 +19,8 @@ footer {
 }
 
 @media (min-width: $breakpoint-tablet) {
-    footer {
-        h5 {
+    .footer {
+        &__heading {
             text-align: center;
         }
     }

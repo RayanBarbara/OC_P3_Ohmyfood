@@ -37,6 +37,7 @@
     }
 
     &:hover {
+        //Make the button slightly brighter when hovering on it
         filter: brightness(102%);
         @include button-shadow(.3);
     }

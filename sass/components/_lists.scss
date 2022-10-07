@@ -2,7 +2,7 @@
 
 .list {
     &-footer {
-        //Vertically align items
+        //Vertically align list items
         display: flex;
         flex-flow: column wrap;
         //Erase the dot 
@@ -19,7 +19,7 @@
 @media (min-width: $breakpoint-tablet) {
     .list {
         &-footer {
-            //Horizontally align items and space them evenly
+            //Horizontally align list items and space them evenly
             flex-flow: row wrap;
             justify-content: space-evenly;
         }
