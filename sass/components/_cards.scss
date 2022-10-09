@@ -83,7 +83,7 @@
 
     //Dishes cards
     &-dish {
-        //Vertically align dishes from the menu
+        //Horizontally align dishes from the menu
         display: flex;
         justify-content: space-between;
         background-color: $white;
@@ -210,7 +210,7 @@
     }
 
     to {
-        transform: translateY(0%);
+        transform: translateY(0);
         opacity: 1;
     }
 }
