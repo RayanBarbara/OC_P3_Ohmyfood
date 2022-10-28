@@ -14,7 +14,7 @@ For this project, only the following technologies are allowed:
 ## How to install and run the project
 
 To test simply & quickly, please visit the online demo: 
-- https://rayanbarbara.github.io/openclassroom_project3_ohmyfood_website
+- https://rayanbarbara.github.io/OC_P3_Ohmyfood
 
 Otherwise, clone the project:
 ```terminal
